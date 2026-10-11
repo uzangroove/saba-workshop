@@ -5,7 +5,7 @@ import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 
 const data = JSON.parse(fs.readFileSync('apps.json', 'utf8'));
-const SKIP = /claude\.ai\/|ai\.studio\/apps\//;            // דפים שדורשים התחברות
+const SKIP = /claude\.ai\/|ai\.studio\/apps\/|chatgpt\.site/;            // דפים שדורשים התחברות
 const only = process.argv[2] ? new Set(process.argv[2].split(',')) : null;
 fs.mkdirSync('shots', { recursive: true });
 fs.mkdirSync('clips', { recursive: true });
@@ -26,7 +26,7 @@ for (const a of data.apps) {
     const page = await ctx.newPage();
     await page.goto(a.launch.url, { waitUntil: 'load', timeout: 30000 });
     await page.waitForLoadState('networkidle', { timeout: 8000 }).catch(() => {});
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(a.wait || 2000);
     const settled = (Date.now() - t0) / 1000;
     await page.screenshot({ path: `tmpvid/${a.id}.png` });
     for (let i = 0; i < 6; i++) { await page.mouse.wheel(0, 260); await page.waitForTimeout(450); }

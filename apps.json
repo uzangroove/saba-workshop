@@ -303,7 +303,8 @@
     "שמירת התקדמות, תמיכה בשלט משחק"
    ],
    "note": null,
-   "public": false
+   "public": false,
+   "wait": 7000
   },
   {
    "id": "K-32",
@@ -349,7 +350,7 @@
     "גרסה 15, אב-טיפוס אנכי",
     "מותאם ל-Galaxy Tab S6"
    ],
-   "note": null,
+   "note": "דורש התחברות לחשבון ChatGPT",
    "public": false
   },
   {
@@ -698,8 +699,7 @@
    "one": "טופס אישור שעות הפעילות בגנים.",
    "status": "fog",
    "launch": {
-    "type": "web",
-    "url": "https://gan-hours-approval.netlify.app"
+    "type": "none"
    },
    "links": [
     {
@@ -725,7 +725,7 @@
    "icon": "clock",
    "preview": null,
    "history": [],
-   "note": "האתר לא נפתח בבדיקה",
+   "note": "האתר ב-Netlify ריק (\"Site not found\"). אפשר למחוק אותו או להעלות אליו מחדש",
    "public": false
   },
   {
@@ -2168,8 +2168,7 @@
    "one": "אתר שלא הצלחתי לפתוח.",
    "status": "fog",
    "launch": {
-    "type": "web",
-    "url": "https://silver-mochi-623335.netlify.app"
+    "type": "none"
    },
    "links": [
     {
@@ -2185,7 +2184,7 @@
    "icon": "flask",
    "preview": null,
    "history": [],
-   "note": null,
+   "note": "האתר ב-Netlify ריק (\"Site not found\"). אפשר למחוק אותו או להעלות אליו מחדש",
    "public": false
   },
   {
@@ -2195,8 +2194,7 @@
    "one": "אתר שלא הצלחתי לפתוח.",
    "status": "fog",
    "launch": {
-    "type": "web",
-    "url": "https://symphonious-manatee-40fc9d.netlify.app"
+    "type": "none"
    },
    "links": [
     {
@@ -2212,7 +2210,7 @@
    "icon": "flask",
    "preview": null,
    "history": [],
-   "note": null,
+   "note": "האתר ב-Netlify ריק (\"Site not found\"). אפשר למחוק אותו או להעלות אליו מחדש",
    "public": false
   },
   {
