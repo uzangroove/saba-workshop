@@ -17,12 +17,6 @@
   "at": "2026-10-11",
   "clip": "clips/K-14.webm"
  },
- "K-32": {
-  "shot": "shots/K-32.jpg",
-  "url": "https://saba-mitzuyar-3d-lab.sabashimon.chatgpt.site",
-  "at": "2026-10-11",
-  "clip": "clips/K-32.webm"
- },
  "K-15": {
   "shot": "shots/K-15.jpg",
   "url": "https://sababali.netlify.app",
@@ -52,12 +46,6 @@
   "url": "https://ganimos.ai.studio/",
   "at": "2026-10-11",
   "clip": "clips/K-33.webm"
- },
- "K-29": {
-  "shot": "shots/K-29.jpg",
-  "url": "https://gan-hours-approval.netlify.app",
-  "at": "2026-10-11",
-  "clip": "clips/K-29.webm"
  },
  "M-01": {
   "shot": "shots/M-01.jpg",
@@ -106,17 +94,5 @@
   "url": "https://nirwayclonednewsite.netlify.app",
   "at": "2026-10-11",
   "clip": "clips/O-06.webm"
- },
- "L-04": {
-  "shot": "shots/L-04.jpg",
-  "url": "https://silver-mochi-623335.netlify.app",
-  "at": "2026-10-11",
-  "clip": "clips/L-04.webm"
- },
- "L-05": {
-  "shot": "shots/L-05.jpg",
-  "url": "https://symphonious-manatee-40fc9d.netlify.app",
-  "at": "2026-10-11",
-  "clip": "clips/L-05.webm"
  }
 }
