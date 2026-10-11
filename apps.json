@@ -1,0 +1,2499 @@
+{
+ "updated": "2026-10-11",
+ "shelves": [
+  {
+   "id": "kids",
+   "name": "ילדים וגנים",
+   "sub": "סיפורים, ציורים שקמים לחיים ומשחקים",
+   "color": "#4FB477",
+   "glyph": "🧸"
+  },
+  {
+   "id": "music",
+   "name": "מוזיקה ובמה",
+   "sub": "שירים, אקורדים וקליפים לחמישי בפינה",
+   "color": "#E07A2E",
+   "glyph": "🎸"
+  },
+  {
+   "id": "ind",
+   "name": "הנדסה ותעשייה",
+   "sub": "תמחור, שרטוטים ועומסי מכונות",
+   "color": "#2F7FD6",
+   "glyph": "⚙️"
+  },
+  {
+   "id": "ai",
+   "name": "AI והדרכה",
+   "sub": "סדנאות, מרכז ידע והסברים",
+   "color": "#6E5BD0",
+   "glyph": "🤖"
+  },
+  {
+   "id": "others",
+   "name": "בשביל אחרים",
+   "sub": "לרבקה, לבת הדודה, לחברים ולעסקים",
+   "color": "#D2557A",
+   "glyph": "🎁"
+  },
+  {
+   "id": "tools",
+   "name": "כלים יומיומיים",
+   "sub": "עזרים קטנים שאני משתמש בהם",
+   "color": "#1F9E96",
+   "glyph": "🔧"
+  },
+  {
+   "id": "lab",
+   "name": "המעבדה",
+   "sub": "ניסויים, טיוטות ודברים מסתוריים",
+   "color": "#C8372D",
+   "glyph": "🧪"
+  },
+  {
+   "id": "library",
+   "name": "הספרייה",
+   "sub": "מסמכים, תוכניות ומצגות",
+   "color": "#9C6B3F",
+   "glyph": "📚"
+  },
+  {
+   "id": "notmine",
+   "name": "חלקים מספקים",
+   "sub": "פרויקטים וכלים של אחרים ששמרתי",
+   "color": "#557087",
+   "glyph": "📦"
+  }
+ ],
+ "apps": [
+  {
+   "id": "K-01",
+   "shelf": "kids",
+   "name": "Story OS",
+   "one": "מערכת ניהול תוכנית הגנים וספרי הסיפור של סבא שמעון.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://storyos-saba-shimon.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://storyos-saba-shimon.netlify.app",
+     "s": "storyos-saba-shimon.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://storyos-saba-shimon-preview.netlify.app",
+     "s": "storyos-saba-shimon-preview.netlify.app"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/storyos-saba-shimon",
+     "s": "uzangroove/storyos-saba-shimon"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/4U6mQVkJRurmX1PGw7pd74",
+     "s": "Story OS — איך זה עובד"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/7ni2xBE4Fsfvc55D7xDt7J",
+     "s": "מבנה Story OS"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\claude_storyos\\StoryOS\\start.cmd"
+    },
+    {
+     "t": "pwa",
+     "s": "Story OS · גרסה 22.11 (אפליקציית Chrome בשולחן העבודה)"
+    },
+    {
+     "t": "nf",
+     "u": "https://heroic-chebakia-546b02.netlify.app",
+     "s": "heroic-chebakia-546b02.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://polite-wisp-00411d.netlify.app",
+     "s": "polite-wisp-00411d.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://spectacular-lollipop-57317d.netlify.app",
+     "s": "spectacular-lollipop-57317d.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://wonderful-sunburst-271a92.netlify.app",
+     "s": "wonderful-sunburst-271a92.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://snazzy-licorice-3b090e.netlify.app",
+     "s": "snazzy-licorice-3b090e.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://amazing-sundae-c5d64c.netlify.app",
+     "s": "amazing-sundae-c5d64c.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://vocal-bubblegum-c80d7d.netlify.app",
+     "s": "vocal-bubblegum-c80d7d.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://aesthetic-granita-81af24.netlify.app",
+     "s": "aesthetic-granita-81af24.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://preeminent-crepe-d01053.netlify.app",
+     "s": "preeminent-crepe-d01053.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://frabjous-croissant-9d29b0.netlify.app",
+     "s": "frabjous-croissant-9d29b0.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://lambent-marzipan-902193.netlify.app",
+     "s": "lambent-marzipan-902193.netlify.app"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "Claude",
+   "ver": "22.x",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [
+    "גרסה 19: נגן ספר סרוק",
+    "גרסה 22.36 האחרונה בין העותקים הישנים",
+    "11 עותקים ישנים ב-Netlify מרוכזים כאן ברשימת הקישורים"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-02",
+   "shelf": "kids",
+   "name": "Story OS · גרסה מקומית",
+   "one": "שרת קטן שמריץ את Story OS על המחשב, בלי אינטרנט.",
+   "status": "lab",
+   "launch": {
+    "type": "local",
+    "path": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\claude_storyos\\StoryOS\\start.cmd",
+    "how": "נתיב"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\claude_storyos\\StoryOS"
+    }
+   ],
+   "tech": "Node.js · localhost:8080",
+   "built": "Claude",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [
+    "start.cmd פותח את הדפדפן ב-localhost:8080 ומריץ server.mjs",
+    "דורש Node.js"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-13",
+   "shelf": "kids",
+   "name": "הציור שלי קם לתחייה",
+   "one": "בוחרים דמות מתוך ציור של ילד, והיא קופצת, רוקדת ומשמיעה קולות.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://draw2live.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://draw2live.netlify.app",
+     "s": "draw2live.netlify.app"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\WWW\\ziur-kam-letechiya"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP PITUAH\\www"
+    },
+    {
+     "t": "pwa",
+     "s": "הציור שלי קם לתחייה (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "HTML · JS · PWA",
+   "built": "Claude",
+   "ver": "PWA 1",
+   "updated": "08/2026",
+   "icon": "dino",
+   "preview": "dino",
+   "history": [
+    "גרסת מבחן עם דמות אחת (הדינו)",
+    "צלילים נוצרים בקוד, כפתור השתקה לגננת"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-14",
+   "shelf": "kids",
+   "name": "סבא מצויר · פלטפורמה",
+   "one": "משחק פלטפורמה: סבא שמעון מציל את סבתא רבקה מהטירה. 4 עולמות ו-40 שלבים.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://sabapainted.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://sabapainted.netlify.app",
+     "s": "sabapainted.netlify.app"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/saba-mitzuyar-levels",
+     "s": "uzangroove/saba-mitzuyar-levels"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/game_assets",
+     "s": "uzangroove/game_assets"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP PITUAH\\saba-mitzuyar-visual-upgrade-v1"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/19eo6TkORkwnwqFYzPa0iG7FQpxaZz6Zm/view",
+     "s": "saba-mitzuyar-levels-main.zip"
+    }
+   ],
+   "tech": "Vite · JS",
+   "built": "Claude",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [
+    "ארץ, מים, שמיים וחלל",
+    "שמירת התקדמות, תמיכה בשלט משחק"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-32",
+   "shelf": "kids",
+   "name": "סבא מצויר · זירת תלת-ממד",
+   "one": "הרפתקה בתלת-ממד עם סבא ושליו: ריצה, שחייה, ריחוף בחלל ומכחול קסם.",
+   "status": "lab",
+   "launch": {
+    "type": "web",
+    "url": "https://saba-mitzuyar-3d-lab.sabashimon.chatgpt.site"
+   },
+   "links": [
+    {
+     "t": "web",
+     "u": "https://saba-mitzuyar-3d-lab.sabashimon.chatgpt.site",
+     "s": "saba-mitzuyar-3d-lab.sabashimon.chatgpt.site"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/saba-mitzuyar-3d",
+     "s": "uzangroove/saba-mitzuyar-3d"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\saba-mitzuyar-3d"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\Saba_Mitzuyar_3D_v15_Full_History.bundle"
+    },
+    {
+     "t": "pwa",
+     "s": "סבא מצויר · זירת תלת־ממד (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "Three.js · Rapier",
+   "built": "ChatGPT / Codex",
+   "ver": "15",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [
+    "גרסה 15, אב-טיפוס אנכי",
+    "מותאם ל-Galaxy Tab S6"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-15",
+   "shelf": "kids",
+   "name": "הרפתקת סבא שמעון",
+   "one": "משחק הרפתקה בהרים. אולי גרסה מוקדמת של סבא מצויר.",
+   "status": "lab",
+   "launch": {
+    "type": "web",
+    "url": "https://sababali.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://sababali.netlify.app",
+     "s": "sababali.netlify.app"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\תרגול שליו.html"
+    },
+    {
+     "t": "pwa",
+     "s": "הרפתקת סבא שמעון (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "07/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-16",
+   "shelf": "kids",
+   "name": "גלריית הציורים",
+   "one": "ציורי ילדים לפי גן, לפני ואחרי, סרטוני יצירה, שעת סיפור והשראה.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://imagina-ganim.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://imagina-ganim.netlify.app",
+     "s": "imagina-ganim.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://saba-shimon.netlify.app",
+     "s": "saba-shimon.netlify.app"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/imagina_ganim",
+     "s": "uzangroove/imagina_ganim"
+    },
+    {
+     "t": "pwa",
+     "s": "סבא שמעון - גלריית הציורים (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "שני אתרים עם אותה כותרת. כדאי להחליט מי הראשי",
+   "public": false
+  },
+  {
+   "id": "K-18",
+   "shelf": "kids",
+   "name": "Living Art · גן ערבה",
+   "one": "פלטפורמת יצירות הגן: גלריה, לפני ואחרי, וידאו ותלת-ממד, עם מסך ניהול.",
+   "status": "lab",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/saba-shimon-living-art",
+     "s": "uzangroove/saba-shimon-living-art"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP PITUAH\\saba-shimon-living-art"
+    }
+   ],
+   "tech": "React · Firebase · R3F",
+   "built": "Claude",
+   "ver": "0.1",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [
+    "MVP ראשון של כשהציור קם לתחייה",
+    "יש netlify.toml, אבל לא מצאתי אתר חי"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-19",
+   "shelf": "kids",
+   "name": "Imagina Kids",
+   "one": "ציורי ילדים שהופכים לתלת-ממד ולווידאו.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://imagina-kids.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://imagina-kids.netlify.app",
+     "s": "imagina-kids.netlify.app"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-28",
+   "shelf": "kids",
+   "name": "GIS גני כרמיאל",
+   "one": "מפה של 97 גנים ומעונות בכרמיאל: סינון, תיקון מיקום וייצוא.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://strong-sundae-ed4214.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://strong-sundae-ed4214.netlify.app",
+     "s": "strong-sundae-ed4214.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://karmiel-gardens-gis-2026.netlify.app",
+     "s": "karmiel-gardens-gis-2026.netlify.app"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/karmiel-gardens-gis",
+     "s": "uzangroove/karmiel-gardens-gis"
+    }
+   ],
+   "tech": "Leaflet · GeoJSON",
+   "built": "",
+   "ver": "V2",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "שני אתרים. strong-sundae מסומן V2",
+   "public": false
+  },
+  {
+   "id": "K-33",
+   "shelf": "kids",
+   "name": "גני כרמיאל · פורטל ומדיה",
+   "one": "פורטל לגני כרמיאל עם גלריות תמונות, מדיה וסנכרון לענן.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://ganimos.ai.studio/"
+   },
+   "links": [
+    {
+     "t": "web",
+     "u": "https://ganimos.ai.studio/",
+     "s": "ganimos.ai.studio"
+    }
+   ],
+   "tech": "Google AI Studio",
+   "built": "Gemini",
+   "ver": "",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-34",
+   "shelf": "kids",
+   "name": "ספריית ספרי הילדים",
+   "one": "הספרייה של שעת סיפור עם סבא שמעון.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://ai.studio/apps/fb9339ba-c287-4862-94ea-21403da2c331"
+   },
+   "links": [
+    {
+     "t": "web",
+     "u": "https://ai.studio/apps/fb9339ba-c287-4862-94ea-21403da2c331",
+     "s": "AI Studio app"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP PITUAH\\ספריית-ספרי-הילדים-של-שעת-סיפור-עם-סבא-שמעון"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/13IxfV1Q9CRAmcpsE_eIJBBK1fEVAIp9I/view",
+     "s": "ספריית-ספרי-הילדים.zip"
+    },
+    {
+     "t": "pwa",
+     "s": "ספריית ספרי הילדים (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "React · Gemini",
+   "built": "Gemini (AI Studio)",
+   "ver": "",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-35",
+   "shelf": "kids",
+   "name": "שעת סיפור עם סבא שמעון",
+   "one": "תוכנה מותקנת במחשב לשעת הסיפור.",
+   "status": "ok",
+   "launch": {
+    "type": "local",
+    "path": "C:\\Users\\doejh\\AppData\\Local\\Programs\\react-example\\שעת סיפור עם סבא שמעון.exe",
+    "how": "נתיב"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "AppData\\Local\\Programs\\react-example\\שעת סיפור עם סבא שמעון.exe"
+    }
+   ],
+   "tech": "Electron · React",
+   "built": "",
+   "ver": "",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-36",
+   "shelf": "kids",
+   "name": "סבא שמעון רק זורק",
+   "one": "משחק זריקה עם מודלים בתלת-ממד.",
+   "status": "lab",
+   "launch": {
+    "type": "local",
+    "path": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe\" --profile-directory=Default --app-id=nfmjbckmhkkdcflenbadhibmdaejhcef",
+    "how": "פקודה"
+   },
+   "links": [
+    {
+     "t": "pwa",
+     "s": "סבא שמעון רק זורק (אפליקציית Chrome בשולחן העבודה)"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\3D MODELS FOR THRWOING GAME"
+    }
+   ],
+   "tech": "Web",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "הכתובת עדיין לא ידועה. בינתיים ההפעלה דרך Chrome",
+   "public": false
+  },
+  {
+   "id": "K-37",
+   "shelf": "kids",
+   "name": "קוף ההר",
+   "one": "משחק פלטפורמה ב-2.5D.",
+   "status": "lab",
+   "launch": {
+    "type": "local",
+    "path": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe\" --profile-directory=Default --app-id=lliikhgkgmbgjdghhafdaccljfllbmlk",
+    "how": "פקודה"
+   },
+   "links": [
+    {
+     "t": "pwa",
+     "s": "קוף ההר - משחק פלטפורמה 2.5D (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "Web",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "הכתובת עדיין לא ידועה. בינתיים ההפעלה דרך Chrome",
+   "public": false
+  },
+  {
+   "id": "K-29",
+   "shelf": "kids",
+   "name": "אישור שעות פעילות בגנים",
+   "one": "טופס אישור שעות הפעילות בגנים.",
+   "status": "fog",
+   "launch": {
+    "type": "web",
+    "url": "https://gan-hours-approval.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://gan-hours-approval.netlify.app",
+     "s": "gan-hours-approval.netlify.app"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1809eXkQbEc0jaj4bFItPN_-Tw5sOOfkt/view",
+     "s": "approval.html"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1Xz-HccMYI2WWQDdOv32GlVjA8RhgcfvS/view",
+     "s": "index.html"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "האתר לא נפתח בבדיקה",
+   "public": false
+  },
+  {
+   "id": "K-20",
+   "shelf": "kids",
+   "name": "גלריית ילדים",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/kids-gallery",
+     "s": "uzangroove/kids-gallery"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-21",
+   "shelf": "kids",
+   "name": "תצוגת זרימת אמנות",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/art-flow-showcase",
+     "s": "uzangroove/art-flow-showcase"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-22",
+   "shelf": "kids",
+   "name": "מצגת מדיה לילדים",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/KIDS-MEDIA-PRESENTATION",
+     "s": "uzangroove/KIDS-MEDIA-PRESENTATION"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-23",
+   "shelf": "kids",
+   "name": "ציור סבא · גרסה 63.5",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/saba_painting_ver_63.5",
+     "s": "uzangroove/saba_painting_ver_63.5"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-24",
+   "shelf": "kids",
+   "name": "ציור סבא",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/GRANDPA-PAINTING",
+     "s": "uzangroove/GRANDPA-PAINTING"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-25",
+   "shelf": "kids",
+   "name": "סבא מדמיין",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/SABA-IMAGINE",
+     "s": "uzangroove/SABA-IMAGINE"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-26",
+   "shelf": "kids",
+   "name": "הפלטפורמה של סבא שמעון",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/PLATFORM-SABASHIMON-ONE",
+     "s": "uzangroove/PLATFORM-SABASHIMON-ONE"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-27",
+   "shelf": "kids",
+   "name": "הפלטפורמה של שליו",
+   "one": "ריפו בגיטהאב. עוד לא פתחתי את התוכן.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/SHALEV-PLATFORM",
+     "s": "uzangroove/SHALEV-PLATFORM"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-30",
+   "shelf": "kids",
+   "name": "דפי משחק קטנים",
+   "one": "ארבעה דפים קטנים: שחייה, חלל ודמיון.",
+   "status": "lab",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1AbwjHo8F14wsgb5Lo7Bhe5glEBmdpcNL/view",
+     "s": "index.html"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "K-31",
+   "shelf": "kids",
+   "name": "תצוגת תלת-ממד של סבא",
+   "one": "צפייה בדמות של סבא בתלת-ממד.",
+   "status": "lab",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1rhurDMCVFj6PYB5_QJDdcGzO8-fzHzku/view",
+     "s": "3d_view_saba.html"
+    }
+   ],
+   "tech": "HTML · Three.js",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-01",
+   "shelf": "music",
+   "name": "חמישי בפינה",
+   "one": "השירים והאקורדים של הג'אם בפינה של בן, מוכנים לבמה.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://hamishi-bapina.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://hamishi-bapina.netlify.app",
+     "s": "hamishi-bapina.netlify.app"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/hamishi-bapina",
+     "s": "uzangroove/hamishi-bapina"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/W4bLoSTrrk6vg2pq3gxyck",
+     "s": "חוברת הדרכה"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/9FDoSTrzP4G4xruKtUPVjG",
+     "s": "תוכנית שדרוג"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/12fbZzCe_0FVdkdCVQUXAN_uSLjotx4QG/view",
+     "s": "hamishi-home.zip"
+    },
+    {
+     "t": "pwa",
+     "s": "חמישי בפינה (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "Claude",
+   "ver": "10/2026",
+   "updated": "09/10/2026",
+   "icon": "guitar",
+   "preview": "chords",
+   "history": [
+    "בתכנון: מודול דפי אקורדים אוטומטי"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-02",
+   "shelf": "music",
+   "name": "זיהוי אקורדים לבמה",
+   "one": "מאזין למיקרופון ומזהה את האקורדים שמנגנים, בזמן אמת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://gilded-heliotrope-0c81c9.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://gilded-heliotrope-0c81c9.netlify.app",
+     "s": "gilded-heliotrope-0c81c9.netlify.app"
+    }
+   ],
+   "tech": "Web Audio",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-03",
+   "shelf": "music",
+   "name": "ZOUZOU",
+   "one": "נותנים לו שיר, מילים ותמונות, והוא מחזיר קליפ מילים מוכן.",
+   "status": "ok",
+   "launch": {
+    "type": "local",
+    "path": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP\\zouzou\\zouzou.bat",
+    "how": "נתיב"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP\\zouzou"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\ZOUZOU.zip"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/LCBFKM4hNDbambCxCLSf2Y",
+     "s": "כלי טפיחה ZOUZOU"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/2zbjCKfHsUnwiBZ2mMShYk",
+     "s": "מסמך אפיון"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1VqFvPkirtI2Sx9pRoQv4xa_XF7UKRyMU/view",
+     "s": "zouzou.bat בדרייב"
+    }
+   ],
+   "tech": "Python · ffmpeg",
+   "built": "Claude",
+   "ver": "zcore",
+   "updated": "10/2026",
+   "icon": "zouzou",
+   "preview": "lyrics",
+   "history": [
+    "mp3 + מילים + תמונות → mp4",
+    "רץ על Windows"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-04",
+   "shelf": "music",
+   "name": "טפיחות לשירים",
+   "one": "כלי טפיחה לסנכרון מילים: הכול מבחירה, יום חמישי, שקט מדומה.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/HqFoCcnKT9q6gopLH7EYDj"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/HqFoCcnKT9q6gopLH7EYDj",
+     "s": "הכול מבחירה"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/PyysTK1SRKXdu3pGALavQe",
+     "s": "יום חמישי"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/HBPQ1jMDvprSftbk7yLHca",
+     "s": "שקט מדומה"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "06/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-05",
+   "shelf": "music",
+   "name": "טקסט מונפש · הודייה",
+   "one": "מילים מונפשות לשיר הודייה לפינה של בן.",
+   "status": "ok",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/15mQDYRT8_wLxeix06In3eY8Vo2PYkRBM/view",
+     "s": "Hodaya-animated-text.html"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\bapina"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-07",
+   "shelf": "music",
+   "name": "מצגת השיר · אין לי למי להתפלל",
+   "one": "מצגת לשיר.",
+   "status": "ok",
+   "launch": {
+    "type": "local",
+    "path": "C:\\Users\\doejh\\OneDrive\\Desktop\\presentation.html",
+    "how": "קובץ"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\presentation.html"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\code_artifact.md"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "M-06",
+   "shelf": "music",
+   "name": "הפרדת ערוצים (demucs)",
+   "one": "שרת מקומי שמפריד שיר לערוצים: קול, תופים, בס ושאר הכלים.",
+   "status": "lab",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1uXIQbMcE0ccUxJSJDTXHmrHAKm-oveUZ/view",
+     "s": "start.bat"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1XE2RGqchPUtzzf_R6BAOPjmM1EIO1vUI/view",
+     "s": "install.bat"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\הפרדות ערוצים של שיר.docx"
+    }
+   ],
+   "tech": "Python · torch · demucs",
+   "built": "",
+   "ver": "",
+   "updated": "09/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-08",
+   "shelf": "ind",
+   "name": "AeroExtract",
+   "one": "ניתוח חכם של קובצי CAD ושרטוטים.",
+   "status": "ok",
+   "launch": {
+    "type": "local",
+    "path": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe\" --profile-directory=Default --app-id=pmmjieehgdnlknlkneblnfamkfcgaeap",
+    "how": "פקודה"
+   },
+   "links": [
+    {
+     "t": "pwa",
+     "s": "AeroExtract CAD & Drawing Intelligence (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "Web",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "הכתובת עדיין לא ידועה. בינתיים ההפעלה דרך Chrome",
+   "public": false
+  },
+  {
+   "id": "I-01",
+   "shelf": "ind",
+   "name": "CADalyze",
+   "one": "ניתוח שרטוטים וקובצי CAD לתמחור.",
+   "status": "lab",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/CADALYSE11.25",
+     "s": "uzangroove/CADALYSE11.25"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1hTUbC33eFeXznwiTXdAicmpmQRBqnU4n/view",
+     "s": "Cadalyze_Local_MVP_HE.zip"
+    }
+   ],
+   "tech": "Python",
+   "built": "",
+   "ver": "",
+   "updated": "11/2025",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-02",
+   "shelf": "ind",
+   "name": "לוח עומסי מכונות",
+   "one": "גוררים עבודות בין מכונות ורואים מיד איפה יש עומס ואיפה פנוי.",
+   "status": "lab",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/YLc4WXMvyTUvVJsPaiHHYD"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/YLc4WXMvyTUvVJsPaiHHYD",
+     "s": "אב-טיפוס: לוח עומסי מכונות"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "אב-טיפוס",
+   "updated": "28/09/2026",
+   "icon": "gear",
+   "preview": "gantt",
+   "history": [
+    "מיועד למפעל של עד כ-100 מכונות"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-03",
+   "shelf": "ind",
+   "name": "AIP · ERP חכם לתעשייה",
+   "one": "דף הבית, ניתוח היתכנות וחבילת פיתוח למערכת ERP משלך.",
+   "status": "lab",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/NymVxPXSxMXSEZm6wZZZGE"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/NymVxPXSxMXSEZm6wZZZGE",
+     "s": "AIP — דף הבית"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/BH2KqYRKdCiwNiNuArqkB8",
+     "s": "ניתוח היתכנות"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1YaQwD6buSmRrOHx2TGhCbHt-ybIq7Tyd/view",
+     "s": "AIP_dev_package.zip"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1R7BBrQh-OC0kRpADetXL0PLbDEQYHgth/view",
+     "s": "SPEC.html"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "24/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-04",
+   "shelf": "ind",
+   "name": "כלי ראיון עובדים",
+   "one": "שאלון ראיונות לפי מחלקה במפעל.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/6wnBhn5xbeyCmendAzZNe5"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/6wnBhn5xbeyCmendAzZNe5",
+     "s": "כלי ראיון עובדים לפי מחלקה"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "28/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-05",
+   "shelf": "ind",
+   "name": "יומן שטח · בליצבלאו",
+   "one": "יומן עבודה בשטח.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/1eNe7qgJyiCYhCjzgiqT84"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/1eNe7qgJyiCYhCjzgiqT84",
+     "s": "יומן שטח"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "24/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-06",
+   "shelf": "ind",
+   "name": "STL to Meta",
+   "one": "המרת קובצי STL.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/stl_to_meta_full_version1.023",
+     "s": "uzangroove/stl_to_meta_full_version1.023"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "1.023",
+   "updated": "08/2025",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "I-07",
+   "shelf": "ind",
+   "name": "Imagina Data Analyzer",
+   "one": "ניתוח נתונים.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/imagina-data-analyzer-",
+     "s": "uzangroove/imagina-data-analyzer-"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "07/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "A-01",
+   "shelf": "ai",
+   "name": "סדנאות AI למבוגרים",
+   "one": "דף הזמנת סדנאות לאנשי עסקים, גיל הזהב, צוותים והורים.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://workshop-adults-sabashimon.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://workshop-adults-sabashimon.netlify.app",
+     "s": "workshop-adults-sabashimon.netlify.app"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "A-02",
+   "shelf": "ai",
+   "name": "גלריית תוצרים · רום",
+   "one": "התוצרים של רום מסדנת ה-AI: לפני ואחרי, סרטון, תלת-ממד וספר.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://workshop-sabashimon.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://workshop-sabashimon.netlify.app",
+     "s": "workshop-sabashimon.netlify.app"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "A-03",
+   "shelf": "ai",
+   "name": "מרכז הידע IMAGINA",
+   "one": "תיעוד הפרויקטים, הניסיון והתוכניות שלך.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://woekshop-shimon-knowledge-base.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://woekshop-shimon-knowledge-base.netlify.app",
+     "s": "woekshop-shimon-knowledge-base.netlify.app"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "בכותרת כתוב \"שמעון קסוס\"",
+   "public": false
+  },
+  {
+   "id": "A-04",
+   "shelf": "ai",
+   "name": "הטרנספורמר",
+   "one": "הסבר אינטראקטיבי: מטקסט לווקטור למשמעות.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/KGcHV9xUiLtDzER575VDGs"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/KGcHV9xUiLtDzER575VDGs",
+     "s": "הטרנספורמר"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "17/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "A-06",
+   "shelf": "ai",
+   "name": "אנציקלופדיית ה-AI",
+   "one": "12 מסכי אב-טיפוס: ציר זמן, אנשים, מודלים, ספרייה ועוד.",
+   "status": "lab",
+   "launch": {
+    "type": "local",
+    "path": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\ai_encyclopedia_saba_shimon\\prototype-home-screen-v4.html",
+    "how": "קובץ"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\ai_encyclopedia_saba_shimon"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "08/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "A-07",
+   "shelf": "ai",
+   "name": "בונה מאגר הידע (kb.py)",
+   "one": "סורק את הדרייב ואת שיחות ה-AI ובונה מהם מאגר חיפוש מקומי.",
+   "status": "lab",
+   "launch": {
+    "type": "local",
+    "path": "cmd /k python \"C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP\\kb\\kb.py\" --help",
+    "how": "פקודה"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP\\kb"
+    }
+   ],
+   "tech": "Python · Chroma · rclone",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [
+    "crawl, catalog, fetch, embed, search",
+    "לא כותב לדרייב"
+   ],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "A-05",
+   "shelf": "ai",
+   "name": "תיק עבודות",
+   "one": "תיק העבודות שלך.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/UZAN-PORTOFOLIO",
+     "s": "uzangroove/UZAN-PORTOFOLIO"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "11/2025",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-01",
+   "shelf": "others",
+   "name": "Rébecca Studio · החנות",
+   "one": "תצוגה וקנייה של סבונים ונרות, עם וואטסאפ ומייל.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://fantastic-phoenix-50c5ff.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://fantastic-phoenix-50c5ff.netlify.app",
+     "s": "fantastic-phoenix-50c5ff.netlify.app"
+    },
+    {
+     "t": "nf",
+     "u": "https://rebecca-studio.netlify.app",
+     "s": "rebecca-studio.netlify.app"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/rebecca-studio-shop",
+     "s": "uzangroove/rebecca-studio-shop"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\rebecca-studio"
+    }
+   ],
+   "tech": "Vite · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "11/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "שני אתרי Netlify. צריך לבחור את הראשי",
+   "public": false
+  },
+  {
+   "id": "O-02",
+   "shelf": "others",
+   "name": "סטודיו התמונות של רבקה",
+   "one": "צילומי מוצר ב-AI לסבונים ולנרות.",
+   "status": "ok",
+   "launch": {
+    "type": "local",
+    "path": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe\" --profile-directory=Default --app-id=jdalhjeoaepfgbaljpnhgenodljgkfom",
+    "how": "פקודה"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/rebecca-photo-studio",
+     "s": "uzangroove/rebecca-photo-studio"
+    },
+    {
+     "t": "cf",
+     "s": "Worker: rebecca-photo-studio"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/6FKCdqCE2h4n4DJzp3TE99",
+     "s": "ממשק חדש"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\rebecca-photo-studio"
+    },
+    {
+     "t": "pwa",
+     "s": "סטודיו התמונות של רבקה (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "React · Cloudflare Worker · OpenAI",
+   "built": "Claude",
+   "ver": "",
+   "updated": "04/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": "כתובת workers.dev לא ידועה. בינתיים ההפעלה דרך Chrome",
+   "public": false
+  },
+  {
+   "id": "O-03",
+   "shelf": "others",
+   "name": "מחשבון הסבון",
+   "one": "מתכוני סבון, בדיקת איזון כימי ועלות ליחידה.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://rebecca-soap-calc.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://rebecca-soap-calc.netlify.app",
+     "s": "rebecca-soap-calc.netlify.app"
+    },
+    {
+     "t": "pwa",
+     "s": "מחשבון הסבון (אפליקציית Chrome בשולחן העבודה)"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-04",
+   "shelf": "others",
+   "name": "פרופיל עסק בגוגל · Rébecca",
+   "one": "דף הכנה לפרופיל העסק בגוגל.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/KDi12vuibejjycy3vUnSpN"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/KDi12vuibejjycy3vUnSpN",
+     "s": "פרופיל עסק בגוגל"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1nVhDlqepHfbebgsQO0a3BwJmjiYSZw9o/view",
+     "s": "rebecca-google-profile.html"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "11/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-05",
+   "shelf": "others",
+   "name": "Rebecca Studio · גרסאות ישנות",
+   "one": "ריפו ישן וקבצים מגרסאות קודמות של האתר.",
+   "status": "retired",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/Rebecca-",
+     "s": "uzangroove/Rebecca-"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1xHv9E5P_a9QKP5pNFoEiSULxTkYA5m2U/view",
+     "s": "Rebecca Studio.html"
+    },
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP FROM C DRIVE OF APP DEV AI TOOLS\\rebecca_website"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "",
+   "updated": "07/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-06",
+   "shelf": "others",
+   "name": "האתר החדש של Nirway",
+   "one": "שכתוב אתר כיסויי רצפה בטיחותיים.",
+   "status": "lab",
+   "launch": {
+    "type": "web",
+    "url": "https://nirwayclonednewsite.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://nirwayclonednewsite.netlify.app",
+     "s": "nirwayclonednewsite.netlify.app"
+    },
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/E25GVccEjZyCmSbyHbGKRm",
+     "s": "מפת אתר"
+    }
+   ],
+   "tech": "Web · Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-07",
+   "shelf": "others",
+   "name": "קו חלוקה · שלמון",
+   "one": "תכנון קו חלוקת סחורה ללקוחות.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/NaxxEqXymC8WjpjkmuxNTK"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/NaxxEqXymC8WjpjkmuxNTK",
+     "s": "קו חלוקה — שלמון"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "23/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-08",
+   "shelf": "others",
+   "name": "הרקדה של אהובה",
+   "one": "קבוצות, אולמות, משתתפים ונגן מוזיקה לאולם.",
+   "status": "lab",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1gxaZZ74jSvJjdM1QMw01tYuK8-wfirp1/view",
+     "s": "dance-prototype-v8.html"
+    },
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1MzuwcLvh0rUR100hjdsEkBnV7FPfc79G/view",
+     "s": "dance-backup-2026-09-19.zip"
+    }
+   ],
+   "tech": "HTML",
+   "built": "",
+   "ver": "v8",
+   "updated": "19/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "O-09",
+   "shelf": "others",
+   "name": "השכרות נישה",
+   "one": "מערכת השכרת ציוד.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/nisha_rent",
+     "s": "uzangroove/nisha_rent"
+    },
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/rental_stuff_nisha",
+     "s": "uzangroove/rental_stuff_nisha"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "01/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "T-01",
+   "shelf": "tools",
+   "name": "הקורא הרציף",
+   "one": "הקראה מיידית של טקסטים ארוכים.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/We6Mt9LzYBA7eAZbpAB49R"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/We6Mt9LzYBA7eAZbpAB49R",
+     "s": "הקורא הרציף"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "24/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "T-02",
+   "shelf": "tools",
+   "name": "מחשבון נטו למשק הבית",
+   "one": "חישוב הכנסה נטו.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/HGHGsqNTo74tsS4ScjLzb1"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/HGHGsqNTo74tsS4ScjLzb1",
+     "s": "מחשבון נטו"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "07/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "T-03",
+   "shelf": "tools",
+   "name": "מלאי הסדנה",
+   "one": "דף ספירת המלאי שממנו נבנתה הסדנה.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/VoaFpVbVX25ViM9rf9WTvZ"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/VoaFpVbVX25ViM9rf9WTvZ",
+     "s": "מלאי הסדנה"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "11/10/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "L-01",
+   "shelf": "lab",
+   "name": "Pilot · Shader 3D",
+   "one": "ניסוי בשיידרים.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/Pilot-a-shader-3d",
+     "s": "uzangroove/Pilot-a-shader-3d"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "01/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "L-02",
+   "shelf": "lab",
+   "name": "PAST-FORWARD-1800",
+   "one": "פרויקט ניסיוני.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/PAST-FORWARD-1800",
+     "s": "uzangroove/PAST-FORWARD-1800"
+    }
+   ],
+   "tech": "GitHub",
+   "built": "",
+   "ver": "",
+   "updated": "10/2025",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "L-03",
+   "shelf": "lab",
+   "name": "חבילה מקומית מ-24.9",
+   "one": "תיקייה בדרייב עם קובץ הפעלה ו-index.html.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "dr",
+     "u": "https://drive.google.com/file/d/1_pXVg9NI8VpFllFp5MBl75dplGi2ALZA/view",
+     "s": "start_windows.bat"
+    }
+   ],
+   "tech": "Windows",
+   "built": "",
+   "ver": "",
+   "updated": "24/09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "L-04",
+   "shelf": "lab",
+   "name": "silver-mochi",
+   "one": "אתר שלא הצלחתי לפתוח.",
+   "status": "fog",
+   "launch": {
+    "type": "web",
+    "url": "https://silver-mochi-623335.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://silver-mochi-623335.netlify.app",
+     "s": "silver-mochi-623335.netlify.app"
+    }
+   ],
+   "tech": "Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "L-05",
+   "shelf": "lab",
+   "name": "symphonious-manatee",
+   "one": "אתר שלא הצלחתי לפתוח.",
+   "status": "fog",
+   "launch": {
+    "type": "web",
+    "url": "https://symphonious-manatee-40fc9d.netlify.app"
+   },
+   "links": [
+    {
+     "t": "nf",
+     "u": "https://symphonious-manatee-40fc9d.netlify.app",
+     "s": "symphonious-manatee-40fc9d.netlify.app"
+    }
+   ],
+   "tech": "Netlify",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "L-06",
+   "shelf": "lab",
+   "name": "Multi-pane viewer",
+   "one": "תבנית React + Vite לתצוגה מרובת חלונות.",
+   "status": "fog",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "C:\\Users\\doejh\\OneDrive\\Desktop\\TEMP\\multi-pane-viewer"
+    }
+   ],
+   "tech": "React · Vite",
+   "built": "",
+   "ver": "",
+   "updated": "09/2026",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-01",
+   "shelf": "library",
+   "name": "המדריך לעבודה יעילה עם Claude",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/X8wetxaMV6zjMMWVNkJMgC"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/X8wetxaMV6zjMMWVNkJMgC",
+     "s": "המדריך לעבודה יעילה עם Claude"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-02",
+   "shelf": "library",
+   "name": "AI ושוק התעסוקה 2026",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/451R9KCkNugRej2SKifawG"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/451R9KCkNugRej2SKifawG",
+     "s": "AI ושוק התעסוקה 2026"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-03",
+   "shelf": "library",
+   "name": "הסבת גטץ לחשמלית",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/B6YEw56ThbCX3DXFruWSHQ"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/B6YEw56ThbCX3DXFruWSHQ",
+     "s": "הסבת גטץ לחשמלית"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-04",
+   "shelf": "library",
+   "name": "WORLD 3D · תוכנית פרויקט",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/7m73tLnKKHBwvxVxGNteQG"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/7m73tLnKKHBwvxVxGNteQG",
+     "s": "WORLD 3D · תוכנית פרויקט"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-05",
+   "shelf": "library",
+   "name": "אפיון יומן פעילות גנים",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/WQnDK6pomudJojfGDignrP"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/WQnDK6pomudJojfGDignrP",
+     "s": "אפיון יומן פעילות גנים"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-06",
+   "shelf": "library",
+   "name": "תוכנית עבודה · שרשרת אספקה ותפ\"י",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/TwvyusedcCcn2B7gfQ9u7y"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/TwvyusedcCcn2B7gfQ9u7y",
+     "s": "תוכנית עבודה · שרשרת אספקה ותפ\"י"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "D-07",
+   "shelf": "library",
+   "name": "מפגש ראשון בגן · דף עבודה",
+   "one": "מסמך או מצגת.",
+   "status": "ok",
+   "launch": {
+    "type": "web",
+    "url": "https://claude.ai/artifact/WXVQcpqXEmBV5tHDzXX6Ew"
+   },
+   "links": [
+    {
+     "t": "ar",
+     "u": "https://claude.ai/artifact/WXVQcpqXEmBV5tHDzXX6Ew",
+     "s": "מפגש ראשון בגן · דף עבודה"
+    }
+   ],
+   "tech": "Artifact",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "F-01",
+   "shelf": "notmine",
+   "name": "docling",
+   "one": "עותק של פרויקט קוד פתוח להמרת מסמכים.",
+   "status": "ok",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/docling",
+     "s": "uzangroove/docling"
+    }
+   ],
+   "tech": "fork",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "F-02",
+   "shelf": "notmine",
+   "name": "StPageFlip",
+   "one": "עותק של ספריית דפדוף עמודים.",
+   "status": "ok",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/StPageFlip",
+     "s": "uzangroove/StPageFlip"
+    }
+   ],
+   "tech": "fork",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "F-03",
+   "shelf": "notmine",
+   "name": "ScratchDataset",
+   "one": "עותק של מאגר נתונים.",
+   "status": "ok",
+   "launch": {
+    "type": "none"
+   },
+   "links": [
+    {
+     "t": "gh",
+     "u": "https://github.com/uzangroove/ScratchDataset",
+     "s": "uzangroove/ScratchDataset"
+    }
+   ],
+   "tech": "fork",
+   "built": "",
+   "ver": "",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  },
+  {
+   "id": "F-04",
+   "shelf": "notmine",
+   "name": "STEP File Analyzer (NIST)",
+   "one": "כלי חינמי של NIST לניתוח קובצי STEP.",
+   "status": "ok",
+   "launch": {
+    "type": "local",
+    "path": "C:\\Users\\doejh\\Downloads\\SFA-5.41\\STEP-File-Analyzer.exe",
+    "how": "נתיב"
+   },
+   "links": [
+    {
+     "t": "pc",
+     "s": "Downloads\\SFA-5.41\\STEP-File-Analyzer.exe"
+    }
+   ],
+   "tech": "Windows",
+   "built": "",
+   "ver": "5.41",
+   "updated": "",
+   "icon": null,
+   "preview": null,
+   "history": [],
+   "note": null,
+   "public": false
+  }
+ ]
+}

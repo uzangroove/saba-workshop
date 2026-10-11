@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>הסדנה של סבא שמעון</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%AD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@700&family=Varela+Round&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an inventor's workshop on blueprint paper. Wooden-edged shelves hold "inventions";
+   each card is a drawing sheet with an engineering title block, a safety-yellow launch lever, and a stamp. */
+:root{
+  --paper:#E8EFF5;        /* blueprint paper */
+  --grid:#C9D7E4;         /* drafting grid */
+  --sheet:#FFFFFF;        /* card sheet */
+  --ink:#16324A;          /* blueprint ink */
+  --muted:#557087;
+  --line:#B9CADA;
+  --safety:#F2B705;       /* machine safety paint */
+  --safety-ink:#1A1400;
+  --stop:#C8372D;         /* stamp red */
+  --ok:#23824F;
+  --wood:#9C6B3F; --wood-dark:#6E4523;
+  --shadow:0 1px 0 rgba(22,50,74,.08), 0 8px 18px -10px rgba(22,50,74,.35);
+  --display:"Karantina","Varela Round",Impact,sans-serif;
+  --body:"Varela Round","Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0F1E2C; --grid:#1B3247; --sheet:#152838; --ink:#DCE8F2; --muted:#8FA9BF; --line:#294560;
+  --safety:#F5C22B; --safety-ink:#1A1400; --stop:#F0655A; --ok:#5CCB8E; --wood:#8A5D35; --wood-dark:#5A3A1E;
+  --shadow:0 1px 0 rgba(0,0,0,.3), 0 10px 22px -12px rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F1E2C; --grid:#1B3247; --sheet:#152838; --ink:#DCE8F2; --muted:#8FA9BF; --line:#294560;
+  --safety:#F5C22B; --safety-ink:#1A1400; --stop:#F0655A; --ok:#5CCB8E; --wood:#8A5D35; --wood-dark:#5A3A1E;
+  --shadow:0 1px 0 rgba(0,0,0,.3), 0 10px 22px -12px rgba(0,0,0,.7); color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
+  background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:20px 72px}
+button{font:inherit}
+:focus-visible{outline:3px solid var(--safety);outline-offset:2px}
+
+/* ---------- header ---------- */
+.hero{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 20px;align-items:center;justify-items:center;text-align:center;margin-bottom:18px}
+.hero .titles{grid-column:1/-1;display:grid;gap:2px;justify-items:center}
+.plate{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(46px,9vw,84px);line-height:.95;margin:0;letter-spacing:.01em;text-wrap:balance}
+h1 em{font-style:normal;background:var(--safety);color:var(--safety-ink);padding:0 .18em;border-radius:4px}
+.tagline{margin:6px 0 0;color:var(--muted);max-width:56ch}
+.maurice-row{grid-column:1/-1;display:flex;gap:12px;align-items:flex-end;justify-content:center;margin-top:6px}
+.bubble{position:relative;background:var(--sheet);border:2px solid var(--ink);border-radius:14px;padding:8px 14px;max-width:34ch;font-size:15px;box-shadow:var(--shadow);text-align:right}
+.bubble::after{content:"";position:absolute;bottom:10px;left:-10px;border:8px solid transparent;border-right-color:var(--ink)}
+.maurice{width:86px;height:86px;flex:none;cursor:pointer}
+@media (prefers-reduced-motion:no-preference){.maurice:hover{animation:wiggle .5s ease}}
+@keyframes wiggle{25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
+
+/* ---------- tool strip ---------- */
+.strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);padding-block:10px;display:grid;gap:8px;border-bottom:2px dashed var(--line);margin-bottom:6px}
+.strip .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#q{flex:1 1 240px;min-width:0;font:inherit;padding:9px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--sheet);color:var(--ink)}
+.tab{border:2px solid var(--ink);background:var(--sheet);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:15px;display:inline-flex;gap:6px;align-items:center}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.tab .n{font-family:var(--mono);font-size:12px;opacity:.75}
+.surprise{background:var(--safety);color:var(--safety-ink);border-color:var(--safety-ink)}
+
+/* ---------- shelves ---------- */
+.shelf{margin-top:30px}
+.shelf-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;justify-content:center;text-align:center;margin-bottom:12px}
+.shelf-head h2{font-family:var(--display);font-weight:700;font-size:40px;line-height:1;margin:0}
+.shelf-head p{margin:0;color:var(--muted);font-size:15px;flex-basis:100%}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:22px;padding:0 4px 18px;position:relative}
+.board::after{content:"";position:absolute;inset-inline:-6px;bottom:0;height:14px;border-radius:3px;
+  background:linear-gradient(180deg,var(--wood),var(--wood-dark));box-shadow:0 6px 10px -6px rgba(0,0,0,.5)}
+.crates{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding-bottom:22px;position:relative}
+.crates::after{content:"";position:absolute;inset-inline:-6px;bottom:0;height:14px;border-radius:3px;background:linear-gradient(180deg,var(--wood),var(--wood-dark))}
+.crate{font-family:var(--mono);font-size:12.5px;padding:10px 14px;border:2px dashed var(--line);border-radius:8px;color:var(--muted);background:var(--sheet)}
+
+/* ---------- card = drawing sheet ---------- */
+.card{background:var(--sheet);border:2px solid var(--ink);border-radius:12px;box-shadow:var(--shadow);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden;position:relative;margin-bottom:14px}
+.preview{position:relative;aspect-ratio:16/9;max-width:100%;border-bottom:2px solid var(--ink);overflow:hidden;cursor:pointer;background:var(--paper)}
+.preview svg{width:100%;height:100%;display:block}
+.preview .hint{position:absolute;bottom:8px;inset-inline-start:8px;font-family:var(--mono);font-size:11px;background:var(--sheet);border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--muted)}
+.stamp{position:absolute;top:10px;inset-inline-end:10px;transform:rotate(-8deg);font-family:var(--display);font-size:22px;line-height:1;padding:4px 10px 2px;border:3px double currentColor;border-radius:6px;background:color-mix(in srgb,var(--sheet) 82%,transparent);letter-spacing:.02em}
+.stamp.ok{color:var(--ok)} .stamp.lab{color:var(--stop)} .stamp.retired{color:var(--muted)}
+.ident{display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;align-items:center;padding:14px 16px 4px}
+.icon{width:56px;height:56px;border-radius:14px;border:2px solid var(--ink);display:grid;place-items:center;overflow:hidden}
+.icon svg{width:100%;height:100%}
+.ident h3{margin:0;font-size:20px;line-height:1.2;text-wrap:balance}
+.ident .one{margin:2px 0 0;color:var(--muted);font-size:14.5px}
+.body{padding:6px 16px 12px;display:grid;gap:10px;align-content:start}
+.where{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12.5px;border:1.5px solid var(--line);border-radius:999px;padding:1px 9px;display:inline-flex;gap:5px;align-items:center;color:var(--ink);text-decoration:none;background:transparent}
+.chip b{width:7px;height:7px;border-radius:50%;display:inline-block}
+.launch{display:flex;gap:8px;align-items:stretch}
+.go{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;font-size:18px;
+  background:var(--safety);color:var(--safety-ink);border:2px solid var(--safety-ink);border-radius:10px;padding:9px 12px;cursor:pointer;
+  box-shadow:0 4px 0 var(--safety-ink);transition:transform .08s,box-shadow .08s}
+.go:active{transform:translateY(3px);box-shadow:0 1px 0 var(--safety-ink)}
+.go small{font-weight:400;font-size:12px;font-family:var(--mono);opacity:.8}
+.more{border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:10px;padding:0 12px;cursor:pointer;font-size:14px}
+.path{font-family:var(--mono);font-size:12px;direction:ltr;text-align:left;unicode-bidi:isolate;background:var(--paper);border:1px dashed var(--line);border-radius:6px;padding:4px 8px;overflow-x:auto;white-space:nowrap}
+.toast{font-size:13px;color:var(--ok);min-height:18px}
+
+/* engineering title block */
+.tblock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);font-family:var(--mono);font-size:11px}
+.tblock div{padding:5px 8px;border-inline-start:1px solid var(--ink);min-width:0}
+.tblock div:first-child{border-inline-start:0}
+.tblock span{display:block;color:var(--muted);font-size:10px;letter-spacing:.06em}
+.tblock strong{display:block;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ---------- details drawer ---------- */
+.scrim{position:fixed;inset:0;background:rgba(10,20,30,.45);z-index:30}
+.drawer{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(520px,100%);background:var(--sheet);border-inline-start:3px solid var(--ink);z-index:31;overflow-y:auto;
+  padding:calc(18px + env(safe-area-inset-top,0px)) 20px calc(24px + env(safe-area-inset-bottom,0px));display:grid;gap:16px;align-content:start}
+.drawer h2{font-family:var(--display);font-size:44px;line-height:1;margin:0;text-align:center}
+.drawer .close{justify-self:start;border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:2px 12px;cursor:pointer}
+.drawer h4{margin:0 0 6px;font-size:15px;text-align:center}
+.drawer .big-preview{border:2px solid var(--ink);border-radius:10px;overflow:hidden;width:100%;max-width:100%}
+.drawer .big-preview svg{width:100%;height:auto;display:block}
+.preview svg,.big-preview svg{direction:ltr}
+.links{display:grid;gap:6px}
+.links a,.links .loc{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center;padding:8px 10px;border:1.5px solid var(--line);border-radius:8px;color:var(--ink);text-decoration:none}
+.links a:hover{border-color:var(--ink)}
+.links i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--muted);min-width:70px}
+.links span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left;unicode-bidi:isolate;font-size:13.5px}
+.facts{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;font-size:14.5px;margin:0}
+.facts dt{color:var(--muted)} .facts dd{margin:0}
+.history{margin:0;padding-inline-start:18px;font-size:14.5px}
+.empty{text-align:center;color:var(--muted);padding:30px 0}
+footer{margin-top:44px;text-align:center;color:var(--muted);font-size:13.5px}
+
+/* preview animations */
+@media (prefers-reduced-motion:no-preference){
+  .card:hover .anim-bounce,.card:focus-within .anim-bounce{animation:bounce 1s ease-in-out infinite}
+  .card:hover .anim-scroll,.card:focus-within .anim-scroll{animation:scrollUp 4s linear infinite}
+  .card:hover .anim-lyric,.card:focus-within .anim-lyric{animation:lyric 3s ease-in-out infinite}
+  .card:hover .anim-drag,.card:focus-within .anim-drag{animation:drag 2.4s ease-in-out infinite}
+  .card:hover .anim-star,.card:focus-within .anim-star{animation:star 1.4s ease-out infinite}
+}
+@keyframes bounce{0%,100%{transform:translateY(0)}45%{transform:translateY(-26px)}}
+@keyframes scrollUp{from{transform:translateY(0)}to{transform:translateY(-90px)}}
+@keyframes lyric{0%{opacity:0;transform:translateX(30px)}25%,75%{opacity:1;transform:translateX(0)}100%{opacity:0;transform:translateX(-30px)}}
+@keyframes drag{0%,100%{transform:translateX(0)}50%{transform:translateX(-120px)}}
+@keyframes star{0%{transform:translate(0,0) scale(.6);opacity:1}100%{transform:translate(-60px,-50px) scale(1.2);opacity:0}}
+.anim-bounce,.anim-scroll,.anim-lyric,.anim-drag,.anim-star{transform-box:fill-box;transform-origin:center}
+
+@media (max-width:720px){.strip{position:static}}
+@media (max-width:560px){
+  .hero{grid-template-columns:1fr}
+  .tblock{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tblock div:nth-child(3){border-inline-start:0}
+  .tblock div:nth-child(n+3){border-top:1px solid var(--ink)}
+}
+
+.go.alt{background:var(--sheet);color:var(--ink);border-color:var(--ink);box-shadow:0 4px 0 var(--ink)}
+.go.alt:active{box-shadow:0 1px 0 var(--ink)}
+.go.none{background:transparent;color:var(--muted);border:2px dashed var(--line);box-shadow:none;cursor:default;font-weight:400;font-size:15px}
+.stamp.fog{color:var(--muted);border-style:dashed}
+.note{font-size:13px;color:var(--stop);margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:8px}
+.stats span{font-family:var(--mono);font-size:12.5px;background:var(--sheet);border:1.5px solid var(--ink);border-radius:999px;padding:2px 10px;font-variant-numeric:tabular-nums}
+.toggle{border:2px dashed var(--ink)}
+.shelf-head h2 .g{font-size:30px;margin-inline-end:6px}
+.loading{text-align:center;color:var(--muted);padding:40px 0}
+.howto{font-size:12.5px;color:var(--muted);margin:0}
+</style>
+</head>
+<body>
+<div class="wrap" dir="rtl" lang="he">
+  <header class="hero">
+    <div class="titles">
+      <div class="plate">IMAGINA · כרמיאל · נוסד בשנות ה-90</div>
+      <h1>הסדנה של <em>סבא שמעון</em></h1>
+      <p class="tagline">כל ההמצאות במקום אחד. לוחצים על המנוף הצהוב והיישום עולה.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="maurice-row">
+      <svg class="maurice" id="maurice" viewBox="0 0 100 100" role="img" aria-label="מוריס העכבר">
+        <circle cx="24" cy="30" r="18" fill="#9AA5B1" stroke="#16324A" stroke-width="3"/>
+        <circle cx="24" cy="30" r="10" fill="#F4B3C2"/>
+        <circle cx="76" cy="30" r="18" fill="#9AA5B1" stroke="#16324A" stroke-width="3"/>
+        <circle cx="76" cy="30" r="10" fill="#F4B3C2"/>
+        <ellipse cx="50" cy="60" rx="30" ry="27" fill="#B7C0C9" stroke="#16324A" stroke-width="3"/>
+        <circle cx="39" cy="55" r="4.5" fill="#16324A"/><circle cx="61" cy="55" r="4.5" fill="#16324A"/>
+        <circle cx="40.5" cy="53.5" r="1.4" fill="#fff"/><circle cx="62.5" cy="53.5" r="1.4" fill="#fff"/>
+        <ellipse cx="50" cy="67" rx="5" ry="4" fill="#E9667D" stroke="#16324A" stroke-width="2"/>
+        <path d="M43 75 Q50 80 57 75" fill="none" stroke="#16324A" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M30 66 L14 63 M30 70 L15 72 M70 66 L86 63 M70 70 L85 72" stroke="#16324A" stroke-width="1.8" stroke-linecap="round"/>
+        <rect x="34" y="20" width="32" height="9" rx="2" fill="#F2B705" stroke="#16324A" stroke-width="2"/>
+        <rect x="28" y="27" width="44" height="5" rx="2" fill="#F2B705" stroke="#16324A" stroke-width="2"/>
+      </svg>
+      <div class="bubble" id="bubble" aria-live="polite">שלום! אני מוריס, מנהל המחסן. רוצה שאמצא לך משהו?</div>
+    </div>
+  </header>
+
+  <div class="strip">
+    <div class="row">
+      <input id="q" type="search" placeholder="מה מחפשים היום? (שם, תיאור, מקום)" aria-label="חיפוש המצאה">
+      <button class="tab surprise" id="surprise" type="button">🎲 תפתיע אותי</button>
+    </div>
+    <div class="row" id="tabs" role="group" aria-label="מדפים"></div>
+    <div class="row"><button class="tab toggle" id="runnable" type="button" aria-pressed="false">רק מה שאפשר להפעיל</button></div>
+  </div>
+
+  <main id="shelves"><p class="loading">מוריס מוציא את ההמצאות מהארגזים…</p></main>
+  <footer>IMAGINA · הסדנה של סבא שמעון · <span id="upd"></span><br>הרשימה נטענת מהקובץ apps.json. מוסיפים, מוחקים או משנים שם, והאתר מתעדכן.</footer>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="dTitle"></aside>
+<script>
+const ICONS = {
+ dino:`<svg viewBox="0 0 56 56"><rect width="56" height="56" fill="#BDE7C9"/><path d="M12 40c0-9 6-15 15-15h5c2-6 6-9 11-9 4 0 6 3 6 6s-3 5-6 5h-2v6c0 7-5 12-12 12H12z" fill="#4FB477" stroke="#16324A" stroke-width="2.5" stroke-linejoin="round"/><circle cx="44" cy="20" r="1.8" fill="#16324A"/><path d="M18 45v5M28 45v5" stroke="#16324A" stroke-width="3" stroke-linecap="round"/><path d="M8 20l3 3 3-3M9 12h4" stroke="#F2B705" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+ guitar:`<svg viewBox="0 0 56 56"><rect width="56" height="56" fill="#FFD9A8"/><path d="M33 12l11 11" stroke="#16324A" stroke-width="5" stroke-linecap="round"/><path d="M41 9l6 6" stroke="#16324A" stroke-width="3" stroke-linecap="round"/><path d="M30 25c-3-3-9-2-11 2-1 2-1 4-3 5-5 1-8 6-5 11s9 7 13 3c2-2 3-4 5-5 4-1 6-5 4-9-1-3-1-5-3-7z" fill="#E07A2E" stroke="#16324A" stroke-width="2.5" stroke-linejoin="round"/><circle cx="23" cy="36" r="3.5" fill="#16324A"/><path d="M16 42l18-18" stroke="#FFF3E0" stroke-width="1.2"/></svg>`,
+ zouzou:`<svg viewBox="0 0 56 56"><rect width="56" height="56" fill="#D9D0FF"/><rect x="9" y="14" width="38" height="26" rx="5" fill="#6E5BD0" stroke="#16324A" stroke-width="2.5"/><path d="M14 22h18M14 28h24M14 34h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="41" cy="44" r="6" fill="#F2B705" stroke="#16324A" stroke-width="2.5"/><path d="M47 44V31l-6 2" stroke="#16324A" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>`,
+ gear:`<svg viewBox="0 0 56 56"><rect width="56" height="56" fill="#CFE3F5"/><g transform="translate(28 28)"><path d="M-4-20h8l1 5 5 2 4-3 6 6-3 4 2 5 5 1v8l-5 1-2 5 3 4-6 6-4-3-5 2-1 5h-8l-1-5-5-2-4 3-6-6 3-4-2-5-5-1v-8l5-1 2-5-3-4 6-6 4 3 5-2z" fill="#2F7FD6" stroke="#16324A" stroke-width="2.5" stroke-linejoin="round" transform="scale(.82)"/><circle r="6" fill="#CFE3F5" stroke="#16324A" stroke-width="2.5"/></g></svg>`
+};
+
+const PREVIEWS = {
+ dino:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><rect width="320" height="180" fill="#FFF7E6"/><path d="M0 150h320v30H0z" fill="#BDE7C9"/><g class="anim-bounce"><path d="M110 140c0-24 16-40 40-40h12c5-16 15-24 29-24 10 0 16 7 16 15s-8 13-16 13h-5v16c0 18-13 32-31 32h-45z" fill="#4FB477" stroke="#16324A" stroke-width="4" stroke-linejoin="round"/><circle cx="191" cy="88" r="4" fill="#16324A"/></g><g class="anim-star"><path d="M250 60l5 10 11 1-8 7 3 11-11-6-10 6 3-11-8-7 11-1z" fill="#F2B705" stroke="#16324A" stroke-width="2.5"/></g><g font-family="Varela Round" font-size="15" fill="#16324A"><rect x="20" y="20" width="62" height="28" rx="14" fill="#fff" stroke="#16324A" stroke-width="2.5"/><text x="51" y="39" text-anchor="middle">קפיצה</text><rect x="20" y="56" width="62" height="28" rx="14" fill="#fff" stroke="#16324A" stroke-width="2.5"/><text x="51" y="75" text-anchor="middle">ריקוד</text></g></svg>`,
+ chords:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><rect width="320" height="180" fill="#1E2A38"/><g class="anim-scroll" font-family="IBM Plex Mono" font-size="14"><g fill="#F2B705"><text x="290" y="40" text-anchor="end">Am        F        C        G</text><text x="290" y="100" text-anchor="end">Dm        Am       E</text><text x="290" y="160" text-anchor="end">C         G        Am       F</text><text x="290" y="220" text-anchor="end">Am        F        C        G</text></g><g fill="#DCE8F2" font-family="Varela Round" font-size="16"><text x="290" y="62" text-anchor="end">1 · יום חמישי</text><text x="290" y="122" text-anchor="end">2 · הודייה לפינה של בן</text><text x="290" y="182" text-anchor="end">3 · הכול מבחירה</text><text x="290" y="242" text-anchor="end">4 · אין לי למי להתפלל</text></g></g><rect x="0" y="0" width="320" height="22" fill="#F2B705"/><text x="160" y="16" fill="#1A1400" font-family="Varela Round" font-size="13" text-anchor="middle">שיר 7 מתוך 24 · קאפו 2</text></svg>`,
+ lyrics:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6E5BD0"/><stop offset="1" stop-color="#E07A2E"/></linearGradient></defs><rect width="320" height="180" fill="url(#sky)"/><circle cx="250" cy="70" r="26" fill="#FFE29A" opacity=".9"/><path d="M0 140 Q80 110 160 135 T320 125 V180 H0z" fill="#2A1F55" opacity=".7"/><g class="anim-lyric"><text x="160" y="100" fill="#fff" font-family="Varela Round" font-size="22" text-anchor="middle" stroke="#16324A" stroke-width=".6">הכול מבחירה</text></g><rect x="20" y="152" width="280" height="6" rx="3" fill="#ffffff55"/><rect x="20" y="152" width="120" height="6" rx="3" fill="#F2B705"/><text x="24" y="146" fill="#fff" font-family="IBM Plex Mono" font-size="10">song.mp3 → clip.mp4</text></svg>`,
+ gantt:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><rect width="320" height="180" fill="#F4F8FC"/><g font-family="IBM Plex Mono" font-size="10" fill="#557087"><text x="306" y="42" text-anchor="end">CNC-1</text><text x="306" y="82" text-anchor="end">CNC-2</text><text x="306" y="122" text-anchor="end">מחרטה</text><text x="306" y="162" text-anchor="end">כרסום</text></g><g stroke="#C9D7E4"><path d="M10 50h250M10 90h250M10 130h250M10 170h250"/></g><rect x="150" y="28" width="104" height="20" rx="4" fill="#2F7FD6"/><rect x="20" y="68" width="90" height="20" rx="4" fill="#23824F"/><rect x="120" y="68" width="60" height="20" rx="4" fill="#23824F"/><rect x="60" y="108" width="190" height="20" rx="4" fill="#C8372D"/><text x="155" y="122" fill="#fff" font-family="Varela Round" font-size="11" text-anchor="middle">עומס 118%</text><g class="anim-drag"><rect x="200" y="148" width="54" height="20" rx="4" fill="#F2B705" stroke="#16324A" stroke-width="2"/><text x="227" y="162" font-family="IBM Plex Mono" font-size="10" text-anchor="middle" fill="#1A1400">#4471</text></g></svg>`
+};
+
+
+const SRC={nf:["Netlify","#1F9E96"],gh:["GitHub","#6E5BD0"],ar:["Artifact","#C8372D"],dr:["דרייב","#2F7FD6"],pc:["המחשב","#557087"],cf:["Cloudflare","#E0832B"],pwa:["קיצור דרך","#9C6B3F"],web:["אתר","#16324A"]};
+const STATUS={ok:["עובד כמו שעון","ok"],lab:["עדיין במעבדה","lab"],retired:["יצא לפנסיה","retired"],fog:["נעלם בערפל","fog"]};
+const HOW={
+  "נתיב":["📋 העתק נתיב","הדבק ב-Win+R ולחץ Enter."],
+  "פקודה":["📋 העתק פקודה","הדבק ב-Win+R ולחץ Enter."],
+  "קובץ":["📋 העתק נתיב","הדבק בשורת הכתובת של הדפדפן."]
+};
+let SHELVES=[],APPS=[],LINES=[];
+const state={shelf:"all",q:"",runnable:false};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const say=t=>{$("#bubble").textContent=t};
+const shelfOf=id=>SHELVES.find(s=>s.id===id)||{color:"#557087",glyph:"📦",name:""};
+
+function genericIcon(a){
+  const s=shelfOf(a.shelf);
+  return `<svg viewBox="0 0 56 56"><rect width="56" height="56" fill="${s.color}" opacity=".22"/><rect x="5" y="5" width="46" height="46" rx="10" fill="none" stroke="${s.color}" stroke-width="2" stroke-dasharray="4 3"/><text x="28" y="37" font-size="26" text-anchor="middle">${s.glyph}</text></svg>`;
+}
+function genericPreview(a){
+  const s=shelfOf(a.shelf);
+  const name=esc(a.name.length>26?a.name.slice(0,25)+"…":a.name);
+  return `<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><defs><pattern id="h-${a.id}" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="${s.color}" stroke-width="2" opacity=".18"/></pattern></defs>
+  <rect width="320" height="180" fill="${s.color}" opacity=".12"/><rect width="320" height="180" fill="url(#h-${a.id})"/>
+  <rect x="24" y="24" width="272" height="132" rx="10" style="fill:var(--sheet)" stroke="${s.color}" stroke-width="3"/>
+  <rect x="24" y="24" width="272" height="22" rx="10" fill="${s.color}"/><rect x="24" y="36" width="272" height="10" fill="${s.color}"/>
+  <circle cx="40" cy="35" r="4" fill="#fff" opacity=".8"/><circle cx="54" cy="35" r="4" fill="#fff" opacity=".8"/><circle cx="68" cy="35" r="4" fill="#fff" opacity=".8"/>
+  <text x="160" y="94" font-size="38" text-anchor="middle" class="anim-bounce">${s.glyph}</text>
+  <text x="160" y="132" font-family="Varela Round" font-size="17" fill="${s.color}" text-anchor="middle" direction="rtl">${name}</text></svg>`;
+}
+const iconOf=a=>a.icon&&ICONS[a.icon]?ICONS[a.icon]:genericIcon(a);
+const previewOf=a=>a.preview&&PREVIEWS[a.preview]?PREVIEWS[a.preview]:genericPreview(a);
+const sourceLink=a=>a.links.find(l=>l.u);
+
+function launchHTML(a){
+  const L=a.launch;
+  if(L.type==="web") return `<a class="go" href="${esc(L.url)}" target="_blank" rel="noopener">▶ הפעל!</a>`;
+  if(L.type==="local"){const h=HOW[L.how]||HOW["נתיב"];return `<button class="go" type="button" data-copy="${esc(L.path)}" data-how="${esc(h[1])}">${h[0]} <small>מקומי</small></button>`;}
+  const s=sourceLink(a);
+  if(s) return `<a class="go alt" href="${esc(s.u)}" target="_blank" rel="noopener">📂 פתח ב${esc(SRC[s.t][0])}</a>`;
+  return `<span class="go none">אין עדיין דרך הפעלה</span>`;
+}
+
+function card(a){
+  const st=STATUS[a.status]||STATUS.ok;
+  const where=[...new Set(a.links.map(l=>l.t))].map(t=>`<span class="chip"><b style="background:${SRC[t][1]}"></b>${SRC[t][0]}</span>`).join("");
+  return `<article class="card" data-id="${a.id}">
+    <div class="preview" data-open="${a.id}" role="button" tabindex="0" aria-label="פרטים על ${esc(a.name)}">${previewOf(a)}<span class="hint">${a.preview?"רחף להצצה":"צילום מסך בקרוב"}</span></div>
+    <div class="stamp ${st[1]}">${st[0]}</div>
+    <div class="ident"><div class="icon">${iconOf(a)}</div><div><h3>${esc(a.name)}</h3><p class="one">${esc(a.one)}</p></div></div>
+    <div class="body">
+      <div class="where">${where}</div>
+      ${a.note?`<p class="note">📌 ${esc(a.note)}</p>`:""}
+      ${a.launch.type==="local"?`<div class="path">${esc(a.launch.path)}</div>`:""}
+      <div class="launch">${launchHTML(a)}<button class="more" type="button" data-open="${a.id}">פרטים</button></div>
+      <div class="toast" aria-live="polite"></div>
+    </div>
+    <div class="tblock">
+      <div><span>מס' פריט</span><strong>${a.id}</strong></div>
+      <div><span>גרסה</span><strong>${esc(a.ver||"—")}</strong></div>
+      <div><span>חומר</span><strong>${esc(a.tech||"—")}</strong></div>
+      <div><span>עודכן</span><strong>${esc(a.updated||"—")}</strong></div>
+    </div>
+  </article>`;
+}
+
+function match(a){
+  if(state.shelf!=="all"&&a.shelf!==state.shelf)return false;
+  if(state.runnable&&a.launch.type==="none")return false;
+  if(!state.q)return true;
+  const h=(a.name+" "+a.one+" "+(a.tech||"")+" "+(a.note||"")+" "+a.links.map(l=>l.s+" "+(l.u||"")).join(" ")).toLowerCase();
+  return h.includes(state.q);
+}
+
+function tabs(){
+  const box=$("#tabs");
+  const all=[{id:"all",name:"כל המדפים"},...SHELVES];
+  box.innerHTML=all.map(s=>{const n=s.id==="all"?APPS.length:APPS.filter(a=>a.shelf===s.id).length;
+    return `<button class="tab" type="button" data-s="${s.id}" aria-pressed="${s.id===state.shelf}">${s.glyph?s.glyph+" ":""}${esc(s.name)} <span class="n">${n}</span></button>`}).join("");
+  box.onclick=e=>{const b=e.target.closest(".tab");if(!b)return;state.shelf=b.dataset.s;box.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-pressed",x===b));render()};
+}
+
+function stats(){
+  const web=APPS.filter(a=>a.launch.type==="web").length, local=APPS.filter(a=>a.launch.type==="local").length, ok=APPS.filter(a=>a.status==="ok").length;
+  $("#stats").innerHTML=`<span>${APPS.length} המצאות</span><span>▶ ${web} בלחיצה</span><span>💻 ${local} במחשב</span><span>✔ ${ok} עובדות</span>`;
+}
+
+function render(){
+  const out=[];
+  SHELVES.forEach(s=>{
+    if(state.shelf!=="all"&&state.shelf!==s.id)return;
+    const items=APPS.filter(a=>a.shelf===s.id&&match(a));
+    if(!items.length)return;
+    out.push(`<section class="shelf" id="shelf-${s.id}"><div class="shelf-head"><h2><span class="g">${s.glyph}</span>${esc(s.name)}</h2><p>${esc(s.sub)} · ${items.length}</p></div><div class="board">${items.map(card).join("")}</div></section>`);
+  });
+  $("#shelves").innerHTML=out.length?out.join(""):`<p class="empty">לא נמצא כלום.</p>`;
+  if(!out.length)say(LINES[0]);
+}
+
+async function copyPath(btn){
+  const holder=btn.closest(".card,.drawer"), toast=holder.querySelector(".toast");
+  try{await navigator.clipboard.writeText(btn.dataset.copy);toast.textContent="הועתק. "+btn.dataset.how;}
+  catch(e){const p=holder.querySelector(".path");if(p){const r=document.createRange();r.selectNodeContents(p);const sel=getSelection();sel.removeAllRanges();sel.addRange(r);}toast.textContent="סימנתי את הטקסט. לחץ Ctrl+C, ואז: "+btn.dataset.how;}
+  say(LINES[2]);
+}
+
+function openDrawer(id){
+  const a=APPS.find(x=>x.id===id);if(!a)return;
+  const st=STATUS[a.status]||STATUS.ok, sh=shelfOf(a.shelf);
+  const links=a.links.map(l=>{const inner=`<i>${SRC[l.t][0]}</i><span>${esc(l.s)}</span>`;
+    return l.u?`<a href="${esc(l.u)}" target="_blank" rel="noopener">${inner}</a>`:`<div class="loc">${inner}</div>`}).join("");
+  const d=$("#drawer");
+  d.innerHTML=`<button class="close" type="button" id="dClose">✕ סגור</button>
+    <h2 id="dTitle">${esc(a.name)}</h2>
+    <div class="big-preview">${previewOf(a)}</div>
+    <p style="margin:0">${esc(a.one)}</p>
+    ${a.note?`<p class="note">📌 ${esc(a.note)}</p>`:""}
+    ${a.launch.type==="local"?`<div class="path">${esc(a.launch.path)}</div>`:""}
+    <div class="launch">${launchHTML(a)}</div>
+    <div class="toast" aria-live="polite"></div>
+    <div><h4>איפה הוא גר (${a.links.length})</h4><div class="links">${links}</div></div>
+    <div><h4>כרטיס מוצר</h4><dl class="facts"><dt>מדף</dt><dd>${sh.glyph} ${esc(sh.name)}</dd><dt>מצב</dt><dd>${st[0]}</dd>${a.built?`<dt>נבנה עם</dt><dd>${esc(a.built)}</dd>`:""}<dt>טכנולוגיה</dt><dd>${esc(a.tech||"—")}</dd><dt>עודכן</dt><dd>${esc(a.updated||"—")}</dd><dt>מס' פריט</dt><dd>${a.id}</dd></dl></div>
+    ${a.history.length?`<div><h4>היסטוריה קצרה</h4><ul class="history">${a.history.map(h=>`<li>${esc(h)}</li>`).join("")}</ul></div>`:""}`;
+  d.hidden=false;$("#scrim").hidden=false;$("#dClose").focus();
+}
+function closeDrawer(){$("#drawer").hidden=true;$("#scrim").hidden=true}
+
+document.addEventListener("click",e=>{
+  const c=e.target.closest("[data-copy]");if(c){copyPath(c);return}
+  const o=e.target.closest("[data-open]");if(o){openDrawer(o.dataset.open);return}
+  if(e.target.id==="dClose"||e.target.id==="scrim")closeDrawer();
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape")closeDrawer();
+  if((e.key==="Enter"||e.key===" ")&&e.target.matches(".preview[data-open]")){e.preventDefault();openDrawer(e.target.dataset.open)}
+});
+$("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render()});
+$("#runnable").onclick=e=>{state.runnable=!state.runnable;e.currentTarget.setAttribute("aria-pressed",state.runnable);render()};
+$("#surprise").onclick=()=>{const pool=APPS.filter(a=>a.launch.type!=="none");const a=pool[Math.floor(Math.random()*pool.length)];say(`הגרלתי לך: ${a.name}! 🎉`);openDrawer(a.id)};
+let li=1;$("#maurice").addEventListener("click",()=>{say(LINES[li%LINES.length]);li++});
+
+fetch("apps.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
+  SHELVES=data.shelves;APPS=data.apps;
+  const nf=APPS.filter(a=>a.status==="fog").length;
+  LINES=["חיפשתי בכל החורים במחסן. אין כאן כלום עם השם הזה 🐭",
+    "המנוף הצהוב מפעיל. הכפתור השני מראה את כל הפרטים.",
+    "יישום שרץ על המחשב? אני מעתיק לך, ואתה מדביק ב-Win+R.",
+    "סבא שמעון בנה את כל זה. אני רק מנקה את האבק.",
+    `יש כאן ${APPS.length} המצאות. ${nf} מהן עדיין בערפל, אבל אני על זה.`,
+    "לחץ על 🎲 ואני אגריל לך המצאה."];
+  $("#upd").textContent="עודכן "+data.updated.split("-").reverse().join("/");
+  stats();tabs();render();
+}).catch(()=>{$("#shelves").innerHTML=`<p class="empty">לא הצלחתי לטעון את apps.json. רענן את הדף.</p>`});
+</script>
+</body>
+</html>
