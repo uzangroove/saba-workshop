@@ -44,32 +44,47 @@ body{margin:0;color:var(--ink);font-family:var(--body);font-size:16px;line-heigh
   background-color:var(--paper);
   background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
   background-size:24px 24px}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:20px 72px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:4px 72px}
 button{font:inherit}
 :focus-visible{outline:3px solid var(--safety);outline-offset:2px}
 
-/* ---------- header ---------- */
-.hero{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 20px;align-items:center;justify-items:center;text-align:center;margin-bottom:18px}
-.hero .titles{grid-column:1/-1;display:grid;gap:2px;justify-items:center}
-.plate{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--muted)}
-h1{font-family:var(--display);font-weight:700;font-size:clamp(46px,9vw,84px);line-height:.95;margin:0;letter-spacing:.01em;text-wrap:balance}
-h1 em{font-style:normal;background:var(--safety);color:var(--safety-ink);padding:0 .18em;border-radius:4px}
-.tagline{margin:6px 0 0;color:var(--muted);max-width:56ch}
-.maurice-row{grid-column:1/-1;display:flex;gap:12px;align-items:flex-end;justify-content:center;margin-top:6px}
-.bubble{position:relative;background:var(--sheet);border:2px solid var(--ink);border-radius:14px;padding:8px 14px;max-width:34ch;font-size:15px;box-shadow:var(--shadow);text-align:right}
-.bubble::after{content:"";position:absolute;bottom:10px;left:-10px;border:8px solid transparent;border-right-color:var(--ink)}
-.maurice{width:86px;height:86px;flex:none;cursor:pointer}
+/* ---------- fixed banner ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:3px solid var(--ink);box-shadow:0 6px 14px -10px rgba(10,20,30,.45);
+  padding-top:env(safe-area-inset-top,0px)}
+.bar-in{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:10px 8px;display:grid;gap:8px}
+.bar-top{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;position:relative}
+.maurice{width:54px;height:54px;flex:none;cursor:pointer}
 @media (prefers-reduced-motion:no-preference){.maurice:hover{animation:wiggle .5s ease}}
 @keyframes wiggle{25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
-
-/* ---------- tool strip ---------- */
-.strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);padding-block:10px;display:grid;gap:8px;border-bottom:2px dashed var(--line);margin-bottom:6px}
-.strip .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-#q{flex:1 1 240px;min-width:0;font:inherit;padding:9px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--sheet);color:var(--ink)}
-.tab{border:2px solid var(--ink);background:var(--sheet);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:15px;display:inline-flex;gap:6px;align-items:center}
+.logo{display:grid;line-height:1}
+h1{font-family:var(--display);font-weight:700;font-size:40px;line-height:.95;margin:0;white-space:nowrap}
+h1 em{font-style:normal;background:var(--safety);color:var(--safety-ink);padding:0 .15em;border-radius:4px}
+.plate{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--muted);margin-top:4px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.plate b{color:var(--ink);font-weight:500}
+.bubble{position:absolute;top:calc(100% + 12px);inset-inline-start:0;z-index:25;width:max-content;max-width:min(340px,80vw);background:var(--sheet);border:2px solid var(--ink);border-radius:12px;padding:7px 12px;font-size:14.5px;box-shadow:var(--shadow);
+  opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .2s,transform .2s}
+.bubble.show{opacity:1;transform:none}
+.bubble::before{content:"";position:absolute;top:-10px;inset-inline-start:18px;border:8px solid transparent;border-top:0;border-bottom:10px solid var(--ink)}
+#q{width:100%;min-width:0;font:inherit;padding:9px 16px;border:2px solid var(--ink);border-radius:999px;background:var(--sheet);color:var(--ink)}
+.stats{display:flex;gap:6px;flex-wrap:nowrap}
+.stats span{font-family:var(--mono);font-size:12px;background:var(--sheet);border:1.5px solid var(--ink);border-radius:999px;padding:3px 9px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar-tabs{display:flex;gap:8px;align-items:center;min-width:0}
+#tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px;flex:1;min-width:0}
+.tab{border:2px solid var(--ink);background:var(--sheet);color:var(--ink);border-radius:999px;padding:3px 11px;cursor:pointer;font-size:14.5px;display:inline-flex;gap:6px;align-items:center;white-space:nowrap;flex:none}
 .tab[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.tab .n{font-family:var(--mono);font-size:12px;opacity:.75}
-.surprise{background:var(--safety);color:var(--safety-ink);border-color:var(--safety-ink)}
+.tab .n{font-family:var(--mono);font-size:11.5px;opacity:.75}
+.surprise{background:var(--safety);color:var(--safety-ink);border-color:var(--safety-ink);padding:7px 14px}
+.toggle{flex:none}
+.shelf{scroll-margin-top:140px}
+@media (max-width:640px){
+  .bar-top{grid-template-columns:minmax(0,1fr) auto;gap:8px 10px}
+  .bar-top .search{grid-column:1/-1;grid-row:2}
+  h1{font-size:30px}.maurice{width:42px;height:42px}.plate{font-size:10px}
+  .surprise .lbl{display:none}
+  .bar-tabs{flex-wrap:nowrap}
+  .toggle .lbl-long{display:none}
+}
 
 /* ---------- shelves ---------- */
 .shelf{margin-top:30px}
@@ -152,9 +167,7 @@ footer{margin-top:44px;text-align:center;color:var(--muted);font-size:13.5px}
 @keyframes star{0%{transform:translate(0,0) scale(.6);opacity:1}100%{transform:translate(-60px,-50px) scale(1.2);opacity:0}}
 .anim-bounce,.anim-scroll,.anim-lyric,.anim-drag,.anim-star{transform-box:fill-box;transform-origin:center}
 
-@media (max-width:720px){.strip{position:static}}
 @media (max-width:560px){
-  .hero{grid-template-columns:1fr}
   .tblock{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tblock div:nth-child(3){border-inline-start:0}
   .tblock div:nth-child(n+3){border-top:1px solid var(--ink)}
@@ -165,25 +178,19 @@ footer{margin-top:44px;text-align:center;color:var(--muted);font-size:13.5px}
 .go.none{background:transparent;color:var(--muted);border:2px dashed var(--line);box-shadow:none;cursor:default;font-weight:400;font-size:15px}
 .stamp.fog{color:var(--muted);border-style:dashed}
 .note{font-size:13px;color:var(--stop);margin:0}
-.stats{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:8px}
-.stats span{font-family:var(--mono);font-size:12.5px;background:var(--sheet);border:1.5px solid var(--ink);border-radius:999px;padding:2px 10px;font-variant-numeric:tabular-nums}
 .toggle{border:2px dashed var(--ink)}
+.toggle[aria-pressed="true"]{border-style:solid}
 .shelf-head h2 .g{font-size:30px;margin-inline-end:6px}
 .loading{text-align:center;color:var(--muted);padding:40px 0}
 .howto{font-size:12.5px;color:var(--muted);margin:0}
 </style>
 </head>
 <body>
-<div class="wrap" dir="rtl" lang="he">
-  <header class="hero">
-    <div class="titles">
-      <div class="plate">IMAGINA · כרמיאל · נוסד בשנות ה-90</div>
-      <h1>הסדנה של <em>סבא שמעון</em></h1>
-      <p class="tagline">כל ההמצאות במקום אחד. לוחצים על המנוף הצהוב והיישום עולה.</p>
-      <div class="stats" id="stats"></div>
-    </div>
-    <div class="maurice-row">
-      <svg class="maurice" id="maurice" viewBox="0 0 100 100" role="img" aria-label="מוריס העכבר">
+<header class="bar" dir="rtl" lang="he">
+  <div class="bar-in">
+    <div class="bar-top">
+      <div class="brand">
+        <svg class="maurice" id="maurice" viewBox="0 0 100 100" role="img" aria-label="מוריס העכבר">
         <circle cx="24" cy="30" r="18" fill="#9AA5B1" stroke="#16324A" stroke-width="3"/>
         <circle cx="24" cy="30" r="10" fill="#F4B3C2"/>
         <circle cx="76" cy="30" r="18" fill="#9AA5B1" stroke="#16324A" stroke-width="3"/>
@@ -197,19 +204,19 @@ footer{margin-top:44px;text-align:center;color:var(--muted);font-size:13.5px}
         <rect x="34" y="20" width="32" height="9" rx="2" fill="#F2B705" stroke="#16324A" stroke-width="2"/>
         <rect x="28" y="27" width="44" height="5" rx="2" fill="#F2B705" stroke="#16324A" stroke-width="2"/>
       </svg>
-      <div class="bubble" id="bubble" aria-live="polite">שלום! אני מוריס, מנהל המחסן. רוצה שאמצא לך משהו?</div>
+        <div class="logo"><h1>הסדנה של <em>סבא שמעון</em></h1><div class="plate" id="stats">IMAGINA · כרמיאל</div></div>
+        <div class="bubble" id="bubble" role="status" aria-live="polite"></div>
+      </div>
+      <div class="search"><input id="q" type="search" placeholder="מה מחפשים היום? (שם, תיאור, מקום)" aria-label="חיפוש המצאה"></div>
+      <button class="tab surprise" id="surprise" type="button" aria-label="תפתיע אותי">🎲 <span class="lbl">תפתיע אותי</span></button>
     </div>
-  </header>
-
-  <div class="strip">
-    <div class="row">
-      <input id="q" type="search" placeholder="מה מחפשים היום? (שם, תיאור, מקום)" aria-label="חיפוש המצאה">
-      <button class="tab surprise" id="surprise" type="button">🎲 תפתיע אותי</button>
+    <div class="bar-tabs">
+      <div id="tabs" role="group" aria-label="מדפים"></div>
+      <button class="tab toggle" id="runnable" type="button" aria-pressed="false" title="רק מה שאפשר להפעיל">▶ <span class="lbl-long">רק מה שאפשר להפעיל</span></button>
     </div>
-    <div class="row" id="tabs" role="group" aria-label="מדפים"></div>
-    <div class="row"><button class="tab toggle" id="runnable" type="button" aria-pressed="false">רק מה שאפשר להפעיל</button></div>
   </div>
-
+</header>
+<div class="wrap" dir="rtl" lang="he">
   <main id="shelves"><p class="loading">מוריס מוציא את ההמצאות מהארגזים…</p></main>
   <footer>IMAGINA · הסדנה של סבא שמעון · <span id="upd"></span><br>הרשימה נטענת מהקובץ apps.json. מוסיפים, מוחקים או משנים שם, והאתר מתעדכן.</footer>
 </div>
@@ -242,7 +249,7 @@ let SHELVES=[],APPS=[],LINES=[];
 const state={shelf:"all",q:"",runnable:false};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const say=t=>{$("#bubble").textContent=t};
+let sayT;const say=(t,ms=5000)=>{const b=$("#bubble");b.textContent=t;b.classList.add("show");clearTimeout(sayT);sayT=setTimeout(()=>b.classList.remove("show"),ms)};
 const shelfOf=id=>SHELVES.find(s=>s.id===id)||{color:"#557087",glyph:"📦",name:""};
 
 function genericIcon(a){
@@ -314,7 +321,7 @@ function tabs(){
 
 function stats(){
   const web=APPS.filter(a=>a.launch.type==="web").length, local=APPS.filter(a=>a.launch.type==="local").length, ok=APPS.filter(a=>a.status==="ok").length;
-  $("#stats").innerHTML=`<span>${APPS.length} המצאות</span><span>▶ ${web} בלחיצה</span><span>💻 ${local} במחשב</span><span>✔ ${ok} עובדות</span>`;
+  $("#stats").innerHTML=`<b>${APPS.length}</b> המצאות · ▶ <b>${web}</b> בלחיצה · 💻 <b>${local}</b> במחשב · ✔ <b>${ok}</b> עובדות`;
 }
 
 function render(){
@@ -381,7 +388,7 @@ fetch("apps.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
     `יש כאן ${APPS.length} המצאות. ${nf} מהן עדיין בערפל, אבל אני על זה.`,
     "לחץ על 🎲 ואני אגריל לך המצאה."];
   $("#upd").textContent="עודכן "+data.updated.split("-").reverse().join("/");
-  stats();tabs();render();
+  stats();tabs();render();say("שלום! אני מוריס, מנהל המחסן. רוצה שאמצא לך משהו?",4500);
 }).catch(()=>{$("#shelves").innerHTML=`<p class="empty">לא הצלחתי לטעון את apps.json. רענן את הדף.</p>`});
 </script>
 </body>
