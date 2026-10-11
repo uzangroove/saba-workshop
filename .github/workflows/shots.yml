@@ -1,0 +1,43 @@
+name: צילומי מסך וקליפים
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['apps.json', 'scripts/shots.mjs', '.github/workflows/shots.yml']
+  schedule:
+    - cron: '0 3 * * 0'   # כל יום ראשון ב-06:00 שעון ישראל
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shots
+  cancel-in-progress: true
+
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: התקנת דפדפן, ffmpeg ופונטים בעברית
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-noto-core fonts-noto-color-emoji fonts-dejavu
+          npm i --no-save playwright@1.47.2
+          npx playwright install --with-deps chromium
+      - name: צילום
+        run: node scripts/shots.mjs
+      - name: שמירה בריפו
+        run: |
+          git config user.name "saba-workshop-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shots clips
+          if git diff --cached --quiet; then echo "אין שינוי"; exit 0; fi
+          git commit -m "צילומי מסך וקליפים מעודכנים"
+          git pull --rebase origin main
+          git push

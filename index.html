@@ -183,6 +183,11 @@ footer{margin-top:44px;text-align:center;color:var(--muted);font-size:13.5px}
 .shelf-head h2 .g{font-size:30px;margin-inline-end:6px}
 .loading{text-align:center;color:var(--muted);padding:40px 0}
 .howto{font-size:12.5px;color:var(--muted);margin:0}
+.preview img.shot,.preview video.clip{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.preview video.clip{z-index:1}
+.preview .hint{z-index:2}
+.big-preview img.shot,.big-preview video{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top center}
+.sym .tile{fill:color-mix(in srgb,var(--c) 24%,#fff)}.sym .a{fill:var(--c)}.sym .w{fill:#fff}.sym .y{fill:#F2B705}.sym .k{fill:#16324A}.sym .p{fill:#F4B3C2}
 </style>
 </head>
 <body>
@@ -222,6 +227,7 @@ footer{margin-top:44px;text-align:center;color:var(--muted);font-size:13.5px}
 </div>
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="dTitle"></aside>
+<script src="icons.js"></script>
 <script>
 const ICONS = {
  dino:`<svg viewBox="0 0 56 56"><rect width="56" height="56" fill="#BDE7C9"/><path d="M12 40c0-9 6-15 15-15h5c2-6 6-9 11-9 4 0 6 3 6 6s-3 5-6 5h-2v6c0 7-5 12-12 12H12z" fill="#4FB477" stroke="#16324A" stroke-width="2.5" stroke-linejoin="round"/><circle cx="44" cy="20" r="1.8" fill="#16324A"/><path d="M18 45v5M28 45v5" stroke="#16324A" stroke-width="3" stroke-linecap="round"/><path d="M8 20l3 3 3-3M9 12h4" stroke="#F2B705" stroke-width="2.5" stroke-linecap="round"/></svg>`,
@@ -267,8 +273,11 @@ function genericPreview(a){
   <text x="160" y="94" font-size="38" text-anchor="middle" class="anim-bounce">${s.glyph}</text>
   <text x="160" y="132" font-family="Varela Round" font-size="17" fill="${s.color}" text-anchor="middle" direction="rtl">${name}</text></svg>`;
 }
-const iconOf=a=>a.icon&&ICONS[a.icon]?ICONS[a.icon]:genericIcon(a);
-const previewOf=a=>a.preview&&PREVIEWS[a.preview]?PREVIEWS[a.preview]:genericPreview(a);
+const iconOf=a=>a.icon&&ICONS[a.icon]?ICONS[a.icon]:(a.icon&&typeof symbolIcon==="function"?symbolIcon(a.icon,shelfOf(a.shelf).color):genericIcon(a));
+let SHOTS={};
+const shotImg=a=>`<img class="shot" src="${SHOTS[a.id].shot}" alt="צילום מסך של ${esc(a.name)}" loading="lazy" decoding="async">`;
+const previewOf=a=>SHOTS[a.id]?shotImg(a):(a.preview&&PREVIEWS[a.preview]?PREVIEWS[a.preview]:genericPreview(a));
+const hintOf=a=>SHOTS[a.id]?.clip?"רחף להצצה ▶":(SHOTS[a.id]?"צילום מסך":(a.preview?"רחף להצצה":"צילום מסך בקרוב"));
 const sourceLink=a=>a.links.find(l=>l.u);
 
 function launchHTML(a){
@@ -284,7 +293,7 @@ function card(a){
   const st=STATUS[a.status]||STATUS.ok;
   const where=[...new Set(a.links.map(l=>l.t))].map(t=>`<span class="chip"><b style="background:${SRC[t][1]}"></b>${SRC[t][0]}</span>`).join("");
   return `<article class="card" data-id="${a.id}">
-    <div class="preview" data-open="${a.id}" role="button" tabindex="0" aria-label="פרטים על ${esc(a.name)}">${previewOf(a)}<span class="hint">${a.preview?"רחף להצצה":"צילום מסך בקרוב"}</span></div>
+    <div class="preview" data-open="${a.id}" role="button" tabindex="0" aria-label="פרטים על ${esc(a.name)}">${previewOf(a)}<span class="hint">${hintOf(a)}</span></div>
     <div class="stamp ${st[1]}">${st[0]}</div>
     <div class="ident"><div class="icon">${iconOf(a)}</div><div><h3>${esc(a.name)}</h3><p class="one">${esc(a.one)}</p></div></div>
     <div class="body">
@@ -351,7 +360,7 @@ function openDrawer(id){
   const d=$("#drawer");
   d.innerHTML=`<button class="close" type="button" id="dClose">✕ סגור</button>
     <h2 id="dTitle">${esc(a.name)}</h2>
-    <div class="big-preview">${previewOf(a)}</div>
+    <div class="big-preview">${SHOTS[a.id]?.clip?`<video src="${SHOTS[a.id].clip}" poster="${SHOTS[a.id].shot}" muted loop playsinline autoplay controls></video>`:previewOf(a)}</div>
     <p style="margin:0">${esc(a.one)}</p>
     ${a.note?`<p class="note">📌 ${esc(a.note)}</p>`:""}
     ${a.launch.type==="local"?`<div class="path">${esc(a.launch.path)}</div>`:""}
@@ -369,6 +378,16 @@ document.addEventListener("click",e=>{
   const o=e.target.closest("[data-open]");if(o){openDrawer(o.dataset.open);return}
   if(e.target.id==="dClose"||e.target.id==="scrim")closeDrawer();
 });
+const canHover=matchMedia("(hover:hover)").matches&&!matchMedia("(prefers-reduced-motion:reduce)").matches;
+document.addEventListener("mouseover",e=>{
+  if(!canHover)return;const pv=e.target.closest(".preview[data-open]");if(!pv||pv.querySelector("video"))return;
+  const s=SHOTS[pv.dataset.open];if(!s||!s.clip)return;
+  const v=document.createElement("video");v.src=s.clip;v.muted=true;v.loop=true;v.playsInline=true;v.className="clip";pv.appendChild(v);v.play().catch(()=>{});
+});
+document.addEventListener("mouseout",e=>{
+  const pv=e.target.closest(".preview[data-open]");if(!pv||pv.contains(e.relatedTarget))return;
+  const v=pv.querySelector("video.clip");if(v){v.pause();v.remove();}
+});
 document.addEventListener("keydown",e=>{
   if(e.key==="Escape")closeDrawer();
   if((e.key==="Enter"||e.key===" ")&&e.target.matches(".preview[data-open]")){e.preventDefault();openDrawer(e.target.dataset.open)}
@@ -378,7 +397,8 @@ $("#runnable").onclick=e=>{state.runnable=!state.runnable;e.currentTarget.setAtt
 $("#surprise").onclick=()=>{const pool=APPS.filter(a=>a.launch.type!=="none");const a=pool[Math.floor(Math.random()*pool.length)];say(`הגרלתי לך: ${a.name}! 🎉`);openDrawer(a.id)};
 let li=1;$("#maurice").addEventListener("click",()=>{say(LINES[li%LINES.length]);li++});
 
-fetch("apps.json",{cache:"no-cache"}).then(r=>r.json()).then(data=>{
+Promise.all([fetch("apps.json",{cache:"no-cache"}).then(r=>r.json()),fetch("shots/index.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([data,shots])=>{
+  SHOTS=shots||{};
   SHELVES=data.shelves;APPS=data.apps;
   const nf=APPS.filter(a=>a.status==="fog").length;
   LINES=["חיפשתי בכל החורים במחסן. אין כאן כלום עם השם הזה 🐭",
