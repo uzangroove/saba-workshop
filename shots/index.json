@@ -1,1 +1,122 @@
-{}
+{
+ "K-01": {
+  "shot": "shots/K-01.jpg",
+  "url": "https://storyos-saba-shimon.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-01.webm"
+ },
+ "K-13": {
+  "shot": "shots/K-13.jpg",
+  "url": "https://draw2live.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-13.webm"
+ },
+ "K-14": {
+  "shot": "shots/K-14.jpg",
+  "url": "https://sabapainted.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-14.webm"
+ },
+ "K-32": {
+  "shot": "shots/K-32.jpg",
+  "url": "https://saba-mitzuyar-3d-lab.sabashimon.chatgpt.site",
+  "at": "2026-10-11",
+  "clip": "clips/K-32.webm"
+ },
+ "K-15": {
+  "shot": "shots/K-15.jpg",
+  "url": "https://sababali.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-15.webm"
+ },
+ "K-16": {
+  "shot": "shots/K-16.jpg",
+  "url": "https://imagina-ganim.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-16.webm"
+ },
+ "K-19": {
+  "shot": "shots/K-19.jpg",
+  "url": "https://imagina-kids.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-19.webm"
+ },
+ "K-28": {
+  "shot": "shots/K-28.jpg",
+  "url": "https://strong-sundae-ed4214.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-28.webm"
+ },
+ "K-33": {
+  "shot": "shots/K-33.jpg",
+  "url": "https://ganimos.ai.studio/",
+  "at": "2026-10-11",
+  "clip": "clips/K-33.webm"
+ },
+ "K-29": {
+  "shot": "shots/K-29.jpg",
+  "url": "https://gan-hours-approval.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/K-29.webm"
+ },
+ "M-01": {
+  "shot": "shots/M-01.jpg",
+  "url": "https://hamishi-bapina.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/M-01.webm"
+ },
+ "M-02": {
+  "shot": "shots/M-02.jpg",
+  "url": "https://gilded-heliotrope-0c81c9.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/M-02.webm"
+ },
+ "A-01": {
+  "shot": "shots/A-01.jpg",
+  "url": "https://workshop-adults-sabashimon.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/A-01.webm"
+ },
+ "A-02": {
+  "shot": "shots/A-02.jpg",
+  "url": "https://workshop-sabashimon.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/A-02.webm"
+ },
+ "A-03": {
+  "shot": "shots/A-03.jpg",
+  "url": "https://woekshop-shimon-knowledge-base.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/A-03.webm"
+ },
+ "O-01": {
+  "shot": "shots/O-01.jpg",
+  "url": "https://fantastic-phoenix-50c5ff.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/O-01.webm"
+ },
+ "O-03": {
+  "shot": "shots/O-03.jpg",
+  "url": "https://rebecca-soap-calc.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/O-03.webm"
+ },
+ "O-06": {
+  "shot": "shots/O-06.jpg",
+  "url": "https://nirwayclonednewsite.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/O-06.webm"
+ },
+ "L-04": {
+  "shot": "shots/L-04.jpg",
+  "url": "https://silver-mochi-623335.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/L-04.webm"
+ },
+ "L-05": {
+  "shot": "shots/L-05.jpg",
+  "url": "https://symphonious-manatee-40fc9d.netlify.app",
+  "at": "2026-10-11",
+  "clip": "clips/L-05.webm"
+ }
+}
