@@ -13,9 +13,13 @@ fs.mkdirSync('tmpvid', { recursive: true });
 const prev = fs.existsSync('shots/index.json') ? JSON.parse(fs.readFileSync('shots/index.json', 'utf8')) : {};
 const out = {};
 
-const browser = await chromium.launch(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {});
+// swiftshader: מאפשר לצלם משחקי WebGL/Three.js בלי כרטיס גרפי
+const browser = await chromium.launch({
+  args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--enable-webgl'],
+  ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}),
+});
 for (const a of data.apps) {
-  if (a.launch?.type !== 'web' || SKIP.test(a.launch.url)) continue;
+  if (a.launch?.type !== 'web' || SKIP.test(a.launch.url) || a.shot === false) continue;
   if (only && !only.has(a.id)) { if (prev[a.id]) out[a.id] = prev[a.id]; continue; }
   const ctx = await browser.newContext({
     viewport: { width: 1280, height: 800 }, locale: 'he-IL',
@@ -52,4 +56,9 @@ for (const a of data.apps) {
 await browser.close();
 fs.rmSync('tmpvid', { recursive: true, force: true });
 fs.writeFileSync('shots/index.json', JSON.stringify(out, null, 1));
+// ניקוי קבצים של יישומים שכבר לא מצולמים
+const keep = new Set(Object.values(out).flatMap(v => [v.shot, v.clip]).filter(Boolean));
+for (const dir of ['shots', 'clips']) for (const f of fs.readdirSync(dir)) {
+  const rel = `${dir}/${f}`; if (f !== 'index.json' && !keep.has(rel)) fs.rmSync(rel);
+}
 console.log(`נשמרו ${Object.keys(out).length} צילומים`);

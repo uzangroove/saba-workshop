@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "saba-workshop-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add shots clips
+          git add -A shots clips
           if git diff --cached --quiet; then echo "אין שינוי"; exit 0; fi
           git commit -m "צילומי מסך וקליפים מעודכנים"
           git pull --rebase origin main
